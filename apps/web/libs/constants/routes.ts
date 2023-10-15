@@ -1,0 +1,5 @@
+export const ABOUT_ME_ROUTE = '/about-me'
+export const BLOG_ROUTE = '/blog'
+export const CONtACT_ME_ROUTE = '/contact-me'
+export const PROJECTS_ROUTE = '/projects'
+export const RESUME_ROUTE = '/resume'

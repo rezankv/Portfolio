@@ -1,3 +1,4 @@
+// TODO یک پکیج برای استس ها باید بسازیم نه اینکه بزاریم توی پوشه پابلیک
 import './global.css';
 
 export const metadata = {
@@ -11,8 +12,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html lang="fa" dir='rtl'>
+      <body>
+        {children}
+      </body>
     </html>
   );
 }
