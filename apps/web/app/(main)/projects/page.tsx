@@ -38,7 +38,7 @@ const page = () => {
               </div>
 
               <div className="select-icon">
-                {/* <ion-icon name="chevron-down"></ion-icon> */}
+                <ion-icon name="chevron-down"></ion-icon>
               </div>
             </button>
 
@@ -70,7 +70,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img
@@ -94,7 +94,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img
@@ -118,7 +118,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img src="/images/project-3.jpg" alt="fundo" loading="lazy" />
@@ -138,7 +138,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img
@@ -162,7 +162,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img src="/images/project-5.png" alt="dsm." loading="lazy" />
@@ -182,7 +182,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img
@@ -206,7 +206,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img
@@ -230,7 +230,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img
@@ -254,7 +254,7 @@ const page = () => {
               <a href="#">
                 <figure className="project-img">
                   <div className="project-item-icon-box">
-                    {/* <ion-icon name="eye-outline"></ion-icon> */}
+                    <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
                   <img

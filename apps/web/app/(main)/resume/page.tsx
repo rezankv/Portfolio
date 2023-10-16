@@ -5,7 +5,7 @@ const page = () => {
   return (
     <>
       <Navbar />
-      <article className="resume" data-page="رزومه">
+      <article  data-page="رزومه">
         <header>
           <h2 className="h2 article-title">رزومه</h2>
         </header>
@@ -13,7 +13,7 @@ const page = () => {
         <section className="timeline">
           <div className="title-wrapper">
             <div className="icon-box">
-              {/* <ion-icon name="book-outline"></ion-icon> */}
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
             <h3 className="h3">تحصیلات</h3>
@@ -60,7 +60,7 @@ const page = () => {
         <section className="timeline">
           <div className="title-wrapper">
             <div className="icon-box">
-              {/* <ion-icon name="book-outline"></ion-icon> */}
+              <ion-icon name="book-outline"></ion-icon>
             </div>
 
             <h3 className="h3">تجربیات کاری</h3>

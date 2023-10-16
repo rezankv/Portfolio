@@ -54,7 +54,7 @@ const page = () => {
             ></textarea>
 
             <button className="form-btn" type="submit" disabled data-form-btn>
-              {/* <ion-icon name="paper-plane"></ion-icon> */}
+              <ion-icon name="paper-plane"></ion-icon>
               <span>ارسال پیام</span>
             </button>
           </form>

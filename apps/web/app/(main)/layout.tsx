@@ -8,10 +8,10 @@ export const metadata = {
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <>
-      {/* <Sidebar /> */}
-      {children}
-    </>
+    <main>
+      <Sidebar />
+      <div className="main-content">{children}</div>
+    </main>
   );
 };
 export default Layout;

@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../components/navbar';
 
-const page = () => {
+const Page = () => {
   return (
     <>
       <Navbar />
@@ -225,7 +225,7 @@ const page = () => {
 
           <section className="testimonials-modal">
             <button className="modal-close-btn" data-modal-close-btn>
-              {/* <ion-icon name="close-outline"></ion-icon> */}
+              <ion-icon name="close-outline"></ion-icon>
             </button>
 
             <div className="modal-img-wrapper">
@@ -301,4 +301,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;

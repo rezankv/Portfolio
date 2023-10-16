@@ -1,4 +1,5 @@
 // TODO یک پکیج برای استس ها باید بسازیم نه اینکه بزاریم توی پوشه پابلیک
+import Script from 'next/script';
 import './global.css';
 
 export const metadata = {
@@ -12,9 +13,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="fa" dir='rtl'>
+    <html lang="fa" dir="rtl">
       <body>
         {children}
+        <Script
+          type="module"
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></Script>
+        <Script
+          noModule
+          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></Script>
       </body>
     </html>
   );
