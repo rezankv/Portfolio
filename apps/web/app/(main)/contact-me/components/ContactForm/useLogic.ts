@@ -3,7 +3,10 @@ import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
 
 const contactFormSchema = z.object({
-  fullName: z.string({ required_error: 'نام نمیتواند خالی باشد' }).min(1).max(50),
+  fullName: z
+    .string({ required_error: 'نام نمیتواند خالی باشد' })
+    .min(1)
+    .max(50),
   email: z
     .string({ required_error: 'ایمیل نمیتواند خالی باشد' })
     .email('ایمیل نامعتبر است.'),
@@ -11,25 +14,19 @@ const contactFormSchema = z.object({
     .string({ required_error: 'پیام نمیتواند خالی باشد' })
     .max(500, { message: 'پیام طولانی است' }),
 });
-type contactFormSchema = z.infer<typeof contactFormSchema>;
+export type ContactFormSchema = z.infer<typeof contactFormSchema>;
 
 const useLogic = () => {
   const {
     control,
     handleSubmit,
-    watch,
-    formState: { isLoading, isValid, errors },
-  } = useForm<contactFormSchema>({
+    formState: { isLoading, isValid },
+  } = useForm<ContactFormSchema>({
     mode: 'onChange',
     resolver: zodResolver(contactFormSchema),
   });
 
-  
-  console.log(watch());
-  console.log(errors);
-
-
-  const handleSendEmail = () => {
+  const handleSendEmail = async (data: ContactFormSchema) => {
     //
   };
 
