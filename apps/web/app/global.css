@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap');
 /*-----------------------------------*\
   #style.css
 \*-----------------------------------*/
@@ -75,7 +75,7 @@
    */
 
   /* font-family */
-  --ff-vazirmatn: "Vazirmatn", sans-serif;
+  --ff-vazirmatn: 'Vazirmatn', sans-serif;
 
   /* font-size */
   --fs-1: 24px;
@@ -210,7 +210,7 @@ article {
 }
 
 .icon-box::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   background: var(--eerie-black-1);
@@ -271,7 +271,7 @@ article.active {
 }
 
 .article-title::after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: 0;
   left: 0;
@@ -312,7 +312,7 @@ article.active {
 }
 
 .content-card::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   background: var(--bg-gradient-jet);
@@ -391,7 +391,7 @@ main {
 }
 
 .info_more-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   border-radius: inherit;
@@ -485,7 +485,7 @@ main {
   position: fixed;
   bottom: 0;
   left: 0;
-  
+
   width: 100%;
   background: hsla(240, 1%, 17%, 0.75);
   backdrop-filter: blur(10px);
@@ -566,7 +566,7 @@ main {
 }
 
 .service-item::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   background: var(--bg-gradient-jet);
@@ -864,7 +864,7 @@ main {
 }
 
 .timeline-item:not(:last-child)::before {
-  content: "";
+  content: '';
   position: absolute;
   top: -25px;
   left: -30px;
@@ -874,7 +874,7 @@ main {
 }
 
 .timeline-item::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 5px;
   left: -33px;
@@ -1039,7 +1039,7 @@ main {
 }
 
 .project-img::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1134,7 +1134,7 @@ main {
 }
 
 .blog-post-item > a::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   border-radius: inherit;
@@ -1295,7 +1295,7 @@ textarea.form-input::-webkit-resizer {
 }
 
 .form-btn::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1px;
   background: var(--bg-gradient-jet);
@@ -2031,4 +2031,21 @@ textarea.form-input::-webkit-resizer {
   .timeline-text {
     max-width: 700px;
   }
+}
+
+/**
+	 * Utils
+	 */
+.dir-ltr {
+  direction: ltr;
+}
+
+.long-text {
+  transition: transform 0.5s;
+}
+.long-text:hover {
+  transform: translateX(-20%);
+  text-overflow: unset;
+  white-space: unset;
+  overflow: unset;
 }

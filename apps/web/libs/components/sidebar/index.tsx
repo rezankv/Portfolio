@@ -1,4 +1,5 @@
 import React from 'react';
+import { linkedin_link, twitter_link } from '../../constants';
 
 const Sidebar = () => {
   return (
@@ -37,7 +38,7 @@ const Sidebar = () => {
 
               <a
                 href="mailto:reza.nikravesh80@gmail.com"
-                className="contact-link"
+                className="contact-link dir-ltr long-text disable-ellipsis-on-hover"
               >
                 reza.nikravesh80@gmail.com
               </a>
@@ -53,12 +54,12 @@ const Sidebar = () => {
               <p className="contact-title">موبایل</p>
 
               <a href="tel:+989337073579" className="contact-link">
-                09337073579
+                ۰۹۳۷۰۷۷۶۰۴۱
               </a>
             </div>
           </li>
 
-          <li className="contact-item">
+          {/* <li className="contact-item">
             <div className="icon-box">
               <ion-icon name="calendar-outline"></ion-icon>
             </div>
@@ -68,7 +69,7 @@ const Sidebar = () => {
 
               <time datetime="1982-06-23">۵/۹/۱۳۸۰</time>
             </div>
-          </li>
+          </li> */}
 
           <li className="contact-item">
             <div className="icon-box">
@@ -78,7 +79,7 @@ const Sidebar = () => {
             <div className="contact-info">
               <p className="contact-title">مکان</p>
 
-              <address>اهواز, خوستان, ایران</address>
+              <address>ایران - خوزستان - اهواز</address>
             </div>
           </li>
         </ul>
@@ -87,22 +88,28 @@ const Sidebar = () => {
 
         <ul className="social-list">
           <li className="social-item">
-            <a href="#" className="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a target="_blank" href={linkedin_link} className="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          
+          <li className="social-item">
+            <a target="_blank" href={linkedin_link} className="social-link">
+            <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
           <li className="social-item">
-            <a href="#" className="social-link">
+            <a target="_blank" href={twitter_link} className="social-link">
               <ion-icon name="logo-twitter"></ion-icon>
             </a>
           </li>
 
-          <li className="social-item">
+          {/* <li className="social-item">
             <a href="#" className="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </aside>

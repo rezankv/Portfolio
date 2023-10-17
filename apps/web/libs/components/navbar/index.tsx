@@ -4,7 +4,7 @@ import {
   CONtACT_ME_ROUTE,
   PROJECTS_ROUTE,
   RESUME_ROUTE,
-} from '../../../../libs/constants';
+} from '../../constants';
 import Link from 'next/link';
 import React from 'react';
 

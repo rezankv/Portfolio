@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import Sidebar from './components/sidebar';
+import Sidebar from '../../libs/components/sidebar';
+import Navbar from '../../libs/components/navbar';
 
 export const metadata = {
   title: 'Welcome to web',
@@ -10,7 +10,10 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <main>
       <Sidebar />
-      <div className="main-content">{children}</div>
+      <div className="main-content">
+        <Navbar />
+        {children}
+      </div>
     </main>
   );
 };

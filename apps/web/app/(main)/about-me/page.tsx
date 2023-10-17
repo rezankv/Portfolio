@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from '../components/navbar';
 
 const Page = () => {
   return (
     <>
-      <Navbar />
       <article className="about active" data-page="درباره من">
         <header>
           <h2 className="h2 article-title">درباره من</h2>
@@ -102,7 +100,7 @@ const Page = () => {
           </ul>
         </section>
 
-        <section className="testimonials">
+        {/* <section className="testimonials">
           <h3 className="h3 testimonials-title">نظرات مشتریان</h3>
 
           <ul className="testimonials-list has-scrollbar">
@@ -218,7 +216,7 @@ const Page = () => {
               </div>
             </li>
           </ul>
-        </section>
+        </section> */}
 
         <div className="modal-container" data-modal-container>
           <div className="overlay" data-overlay></div>
@@ -255,7 +253,7 @@ const Page = () => {
           </section>
         </div>
 
-        <section className="clients">
+        {/* <section className="clients">
           <h3 className="h3 clients-title">مشتریان</h3>
 
           <ul className="clients-list has-scrollbar">
@@ -295,7 +293,7 @@ const Page = () => {
               </a>
             </li>
           </ul>
-        </section>
+        </section> */}
       </article>
     </>
   );

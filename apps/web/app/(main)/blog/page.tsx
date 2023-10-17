@@ -1,11 +1,8 @@
 import React from 'react';
-import Navbar from '../components/navbar';
 
 const page = () => {
   return (
     <>
-     <Navbar/>
-
       <article className="blog" data-page="بلاگ">
         <header>
           <h2 className="h2 article-title">بلاگ</h2>

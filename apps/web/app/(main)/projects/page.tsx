@@ -1,10 +1,8 @@
 import React from 'react';
-import Navbar from '../components/navbar';
 
 const page = () => {
   return (
     <>
-      <Navbar />
       <article className="portfolio" data-page="نمونه کار">
         <header>
           <h2 className="h2 article-title">نمونه کار ها</h2>
