@@ -54,7 +54,7 @@ const Sidebar = () => {
               <p className="contact-title">موبایل</p>
 
               <a href="tel:+989337073579" className="contact-link">
-                ۰۹۳۷۰۷۷۶۰۴۱
+                ۰۹۳۳۷۰۷۳۵۷۹
               </a>
             </div>
           </li>
