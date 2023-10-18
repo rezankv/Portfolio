@@ -29,7 +29,7 @@ const ContactForm = () => {
             <input
               type="email"
               className="form-input"
-              placeholder="آدرس ایمیل"
+              placeholder="ایمیل شما"
               required
               {...field}
             />
@@ -42,7 +42,7 @@ const ContactForm = () => {
         render={({ field }) => (
           <textarea
             className="form-input"
-            placeholder="پیام شما"
+            placeholder="پیام خود را بنویسید..."
             required
             {...field}
           ></textarea>
