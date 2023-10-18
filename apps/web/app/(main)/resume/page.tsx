@@ -1,4 +1,5 @@
-import React from 'react';
+import Link from 'next/link';
+import { bent_oak_systems_link, jsu_link } from '../../../libs/constants';
 
 const page = () => {
   return (
@@ -19,40 +20,88 @@ const page = () => {
 
           <ol className="timeline-list">
             <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">کارگردان هنری</h4>
+              <h4 className="h4 timeline-item-title">
+                Bent Oak Systems (
+                <Link
+                  prefetch={false}
+                  target="_blank"
+                  className="d-inline text-white"
+                  href={bent_oak_systems_link}
+                >
+                  +
+                </Link>
+                ) - انگلستان (دورکاری)
+              </h4>
 
-              <span>۱۳۹۶ — اکنون</span>
+              <span>
+                <i>توسعه دهنده React (مهر ۱۴۰۱ - اردیبهشت ۱۴۰۲)</i>
+              </span>
 
               <p className="timeline-text">
-                من در این دانشگاه به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم
-                و با انجام پروژه های مختلف نمرات عالی کسب کردم
+                من در بنتوک سیستم بر روی یک پروژه رزرو نوبت و ارئه خدمات مربوط
+                به چتر بازی ( Sky Diving ) کار میکردم .
+                <br />
+                وظایف من :
               </p>
+              <ul style={{ paddingInline: '2rem' }} className="timeline-text">
+                <li className="list-style-type-disc">
+                  همکاری در توسعه رابط کاربری اپلیکیشن تحت وب کاربران و اپلیکیشن
+                  های تحت وب مدیریت سامانه (پنل های ادمین)
+                </li>
+                <li className="list-style-type-disc">
+                  توسعه کامپوننت های Reusable اپلیکیشن ها برای استفاده های مجدد
+                </li>
+                <li className="list-style-type-disc">
+                  تعامل مستمر با تیم بک اند و دیزاین برای پیاده سازی فیچر ها
+                </li>
+                <li className="list-style-type-disc">
+                  ارائه راه حل های مناسب برای افزایش پرفورمنس اپلیکیشن
+                </li>
+                <li className="list-style-type-disc">
+                  پیاده سازی قالب ایمیل های تبلیفاتی و اطلاع رسانی با استفاده از
+                  Handlbars
+                </li>
+              </ul>
             </li>
+            <li className="timeline-item" style={{ marginTop: '1rem' }}>
+              <h4 className="h4 timeline-item-title">
+                دانشگاه صنعتی جندی شاپور (
+                <Link
+                  prefetch={false}
+                  target="_blank"
+                  className="d-inline text-white"
+                  href={jsu_link}
+                >
+                  +
+                </Link>
+                ) - دزفول (دورکاری)
+              </h4>
 
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">کارگردان فنی</h4>
-
-              <span>۱۳۹۴ — ۱۳۹۵</span>
+              <span>
+                <i>توسعه دهنده React (فروردین ۱۴۰۰ - تیر ۱۴۰۱)</i>
+              </span>
 
               <p className="timeline-text">
-                من در این دانشگاه به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم
-                و با انجام پروژه های مختلف نمرات عالی کسب کردم من در این دانشگاه
-                به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم و با انجام پروژه
-                های مختلف نمرات عالی کسب کردم
+                من در تیم توسعه نرم افزار دانشگاه صنعتی جندی شاپور بر روی پروژه
+                پیام رسان تحت وب داخلی دانشگاه کار میکردم.
+                <br />
+                وظایف من :
               </p>
-            </li>
-
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">طراح وب</h4>
-
-              <span>۱۳۹۰ — ۱۳۹۲</span>
-
-              <p className="timeline-text">
-                من در این دانشگاه به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم
-                و با انجام پروژه های مختلف نمرات عالی کسب کردم من در این دانشگاه
-                به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم و با انجام پروژه
-                های مختلف نمرات عالی کسب کردم
-              </p>
+              <ul style={{ paddingInline: '2rem' }} className="timeline-text">
+                <li className="list-style-type-disc">
+                  همکاری در توسعه رابط کاربری شامل ساخت کامپوننت ها و صفحات اصلی{' '}
+                </li>
+                <li className="list-style-type-disc">
+                  تعامل مستمر با تیم بک اند برای پیاده سازی فیچر های جدید
+                </li>
+                <li className="list-style-type-disc">
+                  بررسی کد های دیگر توسعه دهندگان (code review)
+                </li>
+                <li className="list-style-type-disc">
+                  بررسی و تحقیق درمورد پیدا کردن ابزار های مناسب برای توسعه و
+                  سریع تر
+                </li>
+              </ul>
             </li>
           </ol>
         </section>
@@ -75,8 +124,8 @@ const page = () => {
               <span>۱۳۹۹ — اکنون</span>
 
               <p className="timeline-text">
-                من در دانشگاه صنعتی جندی شاپور در مقطع کارشناسی رشته مهندسی صنایع مشغول
-                به تحصیل هستم.
+                من در دانشگاه صنعتی جندی شاپور در مقطع کارشناسی رشته مهندسی
+                صنایع مشغول به تحصیل هستم.
               </p>
             </li>
           </ol>
