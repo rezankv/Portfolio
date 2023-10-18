@@ -26,6 +26,10 @@ const useLogic = () => {
     resolver: zodResolver(contactFormSchema),
   });
 
+  /* -------------------------------------------------------------------------- */
+  /*                                  Handlers                                 */
+  /* -------------------------------------------------------------------------- */
+
   const handleSendEmail = async (data: ContactFormSchema) => {
     //
   };

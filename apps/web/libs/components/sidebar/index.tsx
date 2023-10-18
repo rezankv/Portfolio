@@ -1,9 +1,15 @@
-import React from 'react';
+'use client';
 import { linkedin_link, twitter_link } from '../../constants';
+import { cn } from '../../utils';
+import useLogic from './useLogic';
 
 const Sidebar = () => {
+  const { toggleSidebarHandler, isOpen } = useLogic();
   return (
-    <aside className="sidebar" data-sidebar>
+    <aside
+      className={cn('sidebar', isOpen ? 'active' : '')}
+      onClick={toggleSidebarHandler}
+    >
       <div className="sidebar-info">
         <figure className="avatar-box">
           <img src="/images/my-avatar.png" alt="Richard hanrick" width="80" />
@@ -92,10 +98,10 @@ const Sidebar = () => {
               <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
-          
+
           <li className="social-item">
             <a target="_blank" href={linkedin_link} className="social-link">
-            <ion-icon name="logo-github"></ion-icon>
+              <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
 
