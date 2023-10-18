@@ -14,7 +14,7 @@ const Page = () => {
         className="notfound-btn"
       >
         <ion-icon name="chevron-back-outline"></ion-icon>
-        بازگشت به صفحه اصلی
+        {/* بازگشت به صفحه اصلی */}
       </Link>
     </article>
   );
