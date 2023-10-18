@@ -4,7 +4,7 @@ import { bent_oak_systems_link, jsu_link } from '../../../libs/constants';
 const page = () => {
   return (
     <>
-      <article data-page="رزومه">
+      <article>
         <header>
           <h2 className="h2 article-title">رزومه</h2>
         </header>
@@ -121,7 +121,9 @@ const page = () => {
                 دانشگاه صنعتی جندی شاپور دزفول
               </h4>
 
-              <span>۱۳۹۹ — اکنون</span>
+              <span>
+                <i>کارشناسی مهندسی صنایع (۱۳۹۹ — اکنون)</i>
+              </span>
 
               <p className="timeline-text">
                 من در دانشگاه صنعتی جندی شاپور در مقطع کارشناسی رشته مهندسی
