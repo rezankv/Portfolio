@@ -47,3 +47,6 @@ warning.txt
 warning2.txt
 
 .vercel
+
+# env
+.env
