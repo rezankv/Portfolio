@@ -20,7 +20,7 @@ const navItems = [
   { href: CONtACT_ME_ROUTE, text: 'ارتباط با من' },
 ];
 
-const Navbar = () => {
+export const Navbar = () => {
   const pathname = usePathname();
 
   return (
@@ -46,5 +46,3 @@ const Navbar = () => {
     </nav>
   );
 };
-
-export default Navbar;

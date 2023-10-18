@@ -1,5 +1,4 @@
-import Sidebar from '../../libs/components/sidebar';
-import Navbar from '../../libs/components/navbar';
+import { Navbar, Sidebar } from '../../libs/components';
 
 export const metadata = {
   title: 'Welcome to web',

@@ -3,7 +3,7 @@ import { linkedin_link, twitter_link } from '../../constants';
 import { cn } from '../../utils';
 import useLogic from './useLogic';
 
-const Sidebar = () => {
+export const Sidebar = () => {
   const { toggleSidebarHandler, isOpen } = useLogic();
   return (
     <aside
@@ -122,4 +122,4 @@ const Sidebar = () => {
   );
 };
 
-export default Sidebar;
+
