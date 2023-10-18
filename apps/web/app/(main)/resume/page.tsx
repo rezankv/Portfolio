@@ -3,57 +3,10 @@ import React from 'react';
 const page = () => {
   return (
     <>
-      <article  data-page="رزومه">
+      <article data-page="رزومه">
         <header>
           <h2 className="h2 article-title">رزومه</h2>
         </header>
-
-        <section className="timeline">
-          <div className="title-wrapper">
-            <div className="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 className="h3">تحصیلات</h3>
-          </div>
-
-          <ol className="timeline-list">
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">دانشگاه صنعتی طراحان</h4>
-
-              <span>۱۳۹۰ — ۱۳۹۵</span>
-
-              <p className="timeline-text">
-                من در این دانشگاه به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم
-                و با انجام پروژه های مختلف نمرات عالی کسب کردم
-              </p>
-            </li>
-
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">دانشگاه هنر پاریس</h4>
-
-              <span>۱۳۸۸ — ۱۳۹۰</span>
-
-              <p className="timeline-text">
-                من در این دانشگاه به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم
-                و با انجام پروژه های مختلف نمرات عالی کسب کردم
-              </p>
-            </li>
-
-            <li className="timeline-item">
-              <h4 className="h4 timeline-item-title">هنرستان هنر اهواز</h4>
-
-              <span>۱۳۸۴ — ۱۳۸۸</span>
-
-              <p className="timeline-text">
-                من در این دانشگاه به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم
-                و با انجام پروژه های مختلف نمرات عالی کسب کردم من در این دانشگاه
-                به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم و با انجام پروژه
-                های مختلف نمرات عالی کسب کردم
-              </p>
-            </li>
-          </ol>
-        </section>
 
         <section className="timeline">
           <div className="title-wrapper">
@@ -99,6 +52,31 @@ const page = () => {
                 و با انجام پروژه های مختلف نمرات عالی کسب کردم من در این دانشگاه
                 به مدت ۵ سال به صورت حرفه ای به تحصیل پرداختم و با انجام پروژه
                 های مختلف نمرات عالی کسب کردم
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section className="timeline">
+          <div className="title-wrapper">
+            <div className="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 className="h3">تحصیلات</h3>
+          </div>
+
+          <ol className="timeline-list">
+            <li className="timeline-item">
+              <h4 className="h4 timeline-item-title">
+                دانشگاه صنعتی جندی شاپور دزفول
+              </h4>
+
+              <span>۱۳۹۹ — اکنون</span>
+
+              <p className="timeline-text">
+                من در دانشگاه صنعتی جندی شاپور در مقطع کارشناسی رشته مهندسی صنایع مشغول
+                به تحصیل هستم.
               </p>
             </li>
           </ol>
