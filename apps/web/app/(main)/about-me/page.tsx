@@ -58,15 +58,15 @@ const Page = () => {
           <ul className="service-list">
             <li className="service-item">
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">طراحی وب</h4>
+                <h4 className="h4 service-item-title">وب اپلیکیشن</h4>
 
                 <p className="service-item-text">
-                  بالاترین سطح طراحی مدرن و با کیفیت در سطح حرفه‌ای.
+                  من پروژه رویایی شما رو از صفر تا صد میسازم!
                 </p>
               </div>
               <div className="service-icon-box">
                 <img
-                  src="/images/icon-design.svg
+                  src="/images/icon-dev.svg
           "
                   alt="design icon"
                   width="40"
@@ -76,15 +76,16 @@ const Page = () => {
 
             <li className="service-item">
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">توسعه وب</h4>
+                <h4 className="h4 service-item-title">وردپرس</h4>
 
                 <p className="service-item-text">
-                  توسعه وب‌سایت با کیفیت بالا در سطح حرفه‌ای.
+                  میخوای خیلی سریع و با قیمت مناسب سایت داشته باشی؟ وردپرس مال
+                  شماست!
                 </p>
               </div>
               <div className="service-icon-box">
                 <img
-                  src="/images/icon-dev.svg"
+                  src="/images/icon-wordpress.svg"
                   alt="Web development icon"
                   width="40"
                 />
@@ -93,15 +94,15 @@ const Page = () => {
 
             <li className="service-item">
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">اپلیکیشن موبایل</h4>
+                <h4 className="h4 service-item-title">ربات تلگرام</h4>
 
                 <p className="service-item-text">
-                  توسعه حرفه‌ای اپلیکیشن‌ها برای iOS و Android
+ربات ها میتونن یک دستیار خوب و سریع برای کسب و کار شما در بستر تلگرام باشن!
                 </p>
               </div>
               <div className="service-icon-box">
                 <img
-                  src="/images/icon-app.svg"
+                  src="/images/icon-telegram-bot.svg"
                   alt="mobile app icon"
                   width="40"
                 />
@@ -110,15 +111,15 @@ const Page = () => {
 
             <li className="service-item">
               <div className="service-content-box">
-                <h4 className="h4 service-item-title">عکاسی</h4>
+                <h4 className="h4 service-item-title">مشاوره</h4>
 
                 <p className="service-item-text">
-                  من تصاویر با کیفیت و حرفه‌ای در هر دسته‌بندی تهیه می‌کنم.
+نمیدونی باید از کجا شروع کنی ؟ من بهت مسیر درستو نشون میدم
                 </p>
               </div>
               <div className="service-icon-box">
                 <img
-                  src="/images/icon-photo.svg"
+                  src="/images/icon-people.svg"
                   alt="camera icon"
                   width="40"
                 />
