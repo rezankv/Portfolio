@@ -32,7 +32,7 @@ const Page = () => {
             <Link className="d-inline text-yellow" href={RESUME_ROUTE}>
               +
             </Link>
-            ) و پروژه های اوپن یا فریلنسری که انجام دادم رو از اینجا (
+            ) و پروژه هایی که انجام دادم رو از اینجا (
             <Link className="d-inline text-yellow" href={PROJECTS_ROUTE}>
               +
             </Link>
