@@ -102,10 +102,10 @@ const skills = [
     },
   },
   {
-    name: 'Wordpress',
+    name: 'Docker',
     icon: {
-      src: '/images/icon-wordpress.svg',
-      alt: 'wordpress-icon',
+      src: '/images/icon-docker.svg',
+      alt: 'docker-icon',
     },
   },
   {
