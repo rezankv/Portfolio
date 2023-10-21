@@ -1,4 +1,4 @@
-export const ABOUT_ME_ROUTE = '/about-me'
+export const HOME_ROUTE = '/home'
 export const BLOG_ROUTE = '/blog'
 export const CONtACT_ME_ROUTE = '/contact-me'
 export const PROJECTS_ROUTE = '/projects'

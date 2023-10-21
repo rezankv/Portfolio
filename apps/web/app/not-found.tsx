@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import React from 'react';
-import { ABOUT_ME_ROUTE } from '../libs/constants';
+import { HOME_ROUTE } from '../libs/constants';
 
 const Page = () => {
   return (
@@ -9,7 +8,7 @@ const Page = () => {
       <div className="notfound-description">محتوا مورد نظر یافت نشد</div>
       <Link
         target="_parent"
-        href={ABOUT_ME_ROUTE}
+        href={HOME_ROUTE}
         replace
         className="notfound-btn"
       >

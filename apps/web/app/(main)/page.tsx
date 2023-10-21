@@ -1,6 +1,6 @@
 import { redirect } from 'next/navigation';
-import { ABOUT_ME_ROUTE } from '../../libs/constants';
+import { HOME_ROUTE } from '../../libs/constants';
 
-const page = () => redirect(ABOUT_ME_ROUTE);
+const page = () => redirect(HOME_ROUTE);
 
 export default page;

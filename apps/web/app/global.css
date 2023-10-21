@@ -583,7 +583,7 @@ main {
 }
 
 .service-icon-box img {
-  margin: auto;
+  margin: 1.5rem auto 0 auto;
 }
 
 .service-content-box {
@@ -1518,7 +1518,7 @@ textarea.form-input::-webkit-resizer {
     justify-content: space-between;
     align-items: center;
     gap: 18px;
-    padding: 30px;
+    padding: 15px 30px;
   }
 
   .service-icon-box {
