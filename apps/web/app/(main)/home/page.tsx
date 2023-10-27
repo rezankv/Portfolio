@@ -101,7 +101,7 @@ const Page = () => {
               </div>
               <div className="service-icon-box">
                 <img
-                  src="/images/icon-telegram-bot.svg"
+                  src="/images/icon-telegram.svg"
                   alt="mobile app icon"
                   width="40"
                 />

@@ -12,6 +12,7 @@ services:
     volumes:
       - ./apps/web:/app/apps/web
       - node-modules:/app/node_modules
+      - ./.contentlayer:/app/.contentlayer
       # - /app/node_modules
 volumes:
   node-modules: null

@@ -111,6 +111,13 @@ export const Sidebar = () => {
             </a>
           </li>
 
+          <li className="social-item">
+            <a target="_blank" href={twitter_link} className="social-link">
+              {/* <ion-icon name="logo-telegram"></ion-icon> */}
+              <img src="/images/icon-telegram-grey.svg" alt="mobile app icon"  />
+            </a>
+          </li>
+
           {/* <li className="social-item">
             <a href="#" className="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
@@ -121,5 +128,3 @@ export const Sidebar = () => {
     </aside>
   );
 };
-
-

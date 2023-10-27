@@ -1,8 +1,16 @@
+import { allProjects, Project } from 'contentlayer/generated';
+import Link from 'next/link';
+import { compareDesc } from 'date-fns';
+import { generateUrl } from '../../../libs/utils';
+import { SINGLE_PROJECTS_ROUTE } from '../../../libs/constants';
 
+const Page = () => {
+  const projects = allProjects.sort((a, b) =>
+    compareDesc(new Date(a.createdAt), new Date(b.createdAt))
+  );
 
-const page = () => {
-  const rednerProjects = () => (
-    <section className="projects">
+  const renderFilters = () => (
+    <>
       <ul className="filter-list">
         <li className="filter-item">
           <button className="active" data-filter-btn>
@@ -22,7 +30,6 @@ const page = () => {
           <button data-filter-btn>توسعه وب</button>
         </li>
       </ul>
-
       <div className="filter-select-box">
         <button className="filter-select" data-select>
           <div className="select-value" data-selecct-value>
@@ -52,233 +59,49 @@ const page = () => {
           </li>
         </ul>
       </div>
-
-      <ul className="project-list">
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="توسعه وب"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img src="/images/project-1.jpg" alt="finance" loading="lazy" />
-            </figure>
-
-            <h3 className="project-title">داشبورد مدیریت</h3>
-
-            <p className="project-category">توسعه وب</p>
-          </a>
-        </li>
-
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="توسعه وب"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img src="/images/project-2.png" alt="orizon" loading="lazy" />
-            </figure>
-
-            <h3 className="project-title">داشبورد مدیریت</h3>
-
-            <p className="project-category">توسعه وب</p>
-          </a>
-        </li>
-
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="طراحی وب"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img src="/images/project-3.jpg" alt="fundo" loading="lazy" />
-            </figure>
-
-            <h3 className="project-title">اجاره اقامتگاه</h3>
-
-            <p className="project-category">طراحی</p>
-          </a>
-        </li>
-
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="اپلیکیشن"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img
-                src="/images/project-4.png"
-                alt="brawlhalla"
-                loading="lazy"
-              />
-            </figure>
-
-            <h3 className="project-title">بازیلند</h3>
-
-            <p className="project-category">اپلیکیشن</p>
-          </a>
-        </li>
-
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="طراحی وب"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img src="/images/project-5.png" alt="dsm." loading="lazy" />
-            </figure>
-
-            <h3 className="project-title">جی اس ام</h3>
-
-            <p className="project-category">طراحی</p>
-          </a>
-        </li>
-
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="طراحی وب"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img src="/images/project-6.png" alt="metaspark" loading="lazy" />
-            </figure>
-
-            <h3 className="project-title">متالید</h3>
-
-            <p className="project-category">طراحی</p>
-          </a>
-        </li>
-
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="توسعه وب"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img src="/images/project-7.png" alt="summary" loading="lazy" />
-            </figure>
-
-            <h3 className="project-title">قالب تابستان</h3>
-
-            <p className="project-category">توسعه وب</p>
-          </a>
-        </li>
-
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="اپلیکیشن"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img
-                src="/images/project-8.jpg"
-                alt="task manager"
-                loading="lazy"
-              />
-            </figure>
-
-            <h3 className="project-title">مدیریت وظایف</h3>
-
-            <p className="project-category">اپلیکیشن</p>
-          </a>
-        </li>
-
-        <li
-          className="project-item active"
-          data-filter-item
-          data-category="توسعه وب"
-        >
-          <a href="#">
-            <figure className="project-img">
-              <div className="project-item-icon-box">
-                <ion-icon name="eye-outline"></ion-icon>
-              </div>
-
-              <img src="/images/project-9.png" alt="arrival" loading="lazy" />
-            </figure>
-
-            <h3 className="project-title">تحلیلگر من</h3>
-
-            <p className="project-category">توسعه وب</p>
-          </a>
-        </li>
-      </ul>
-    </section>
-  );
-  const renderUnderDevelopmentMessage = () => (
-    <>
-      <img
-        style={{
-          margin: '7rem auto 0 auto',
-          maxWidth: '80px',
-          maxHeight: '80px',
-          opacity: 0.8,
-        }}
-        alt="ic-repair"
-        src="/images/icon-repair.svg"
-      />
-      <h3
-        style={{
-          textAlign: 'center',
-          color: 'var(--orange-yellow-crayola)',
-          opacity: 0.8,
-          marginBottom: '3rem',
-        }}
-      >
-        این قسمت در حال راه اندازی است
-      </h3>
     </>
   );
+  const renderProjects = (projects: Project[]) => (
+    <ul className="project-list">
+      {projects.map((project) => (
+        <li key={project.slug} className="project-item active">
+          <Link
+            href={generateUrl(
+              SINGLE_PROJECTS_ROUTE,
+              { slug: project.slug },
+              {}
+            )}
+          >
+            <figure className="project-img">
+              <div className="project-item-icon-box">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+
+              <img src={project.thumbnail} alt={project.title} loading="lazy" />
+            </figure>
+
+            <h3 className="project-title">{project.title}</h3>
+
+            <p className="project-category">{project.category}</p>
+          </Link>
+        </li>
+      ))}
+    </ul>
+  );
+
   return (
     <>
       <article className="portfolio" style={{ minHeight: 'unset' }}>
         <header>
           <h2 className="h2 article-title">نمونه کار ها</h2>
         </header>
-        {/* {rednerProjects()} */}
-        {renderUnderDevelopmentMessage()}
+        <section className="projects">
+          {renderFilters()}
+          {renderProjects(projects)}
+        </section>
       </article>
     </>
   );
 };
 
-export default page;
+export default Page;
