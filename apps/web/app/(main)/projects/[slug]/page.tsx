@@ -13,13 +13,13 @@ interface Props {
   };
 }
 
-export const generateMetaData = async ({
-  params: { slug },
-}: GenerateMetaDataArgs) => {
-  const project = getProjectBySlug(slug);
-  if (!project) notFound();
-  return { title: project.title };
-};
+// export const generateMetaData = async ({
+//   params: { slug },
+// }: GenerateMetaDataArgs) => {
+//   const project = getProjectBySlug(slug);
+//   if (!project) notFound();
+//   return { title: project.title };
+// };
 
 export const generateStaticParams = async () =>
   allProjects.map((project) => ({ url: project.url }));
