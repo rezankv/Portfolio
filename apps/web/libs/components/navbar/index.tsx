@@ -14,7 +14,7 @@ import { usePathname } from 'next/navigation';
 
 const navItems = [
   { href: HOME_ROUTE, text: 'خانه' },
-  { href: RESUME_ROUTE, text: 'رزومه' },
+  { href: RESUME_ROUTE, text: 'تجربیات' },
   { href: PROJECTS_ROUTE, text: 'پروژه ها' },
   { href: BLOG_ROUTE, text: 'بلاگ' },
   { href: CONtACT_ME_ROUTE, text: 'ارتباط با من' },
