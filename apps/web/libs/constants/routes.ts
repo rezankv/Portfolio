@@ -1,4 +1,4 @@
-export const HOME_ROUTE = '/home'
+export const HOME_ROUTE = '/'
 export const BLOG_ROUTE = '/blog'
 export const SINGLE_BLOG_ROUTE = BLOG_ROUTE + '/:slug'
 export const CONtACT_ME_ROUTE = '/contact-me'
