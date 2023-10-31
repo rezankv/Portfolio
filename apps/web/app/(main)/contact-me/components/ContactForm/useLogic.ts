@@ -1,40 +1,37 @@
 import { useForm } from 'react-hook-form';
-import { z } from 'zod';
 import { zodResolver } from '@hookform/resolvers/zod';
+import {
+  ContactMeSchema,
+  contactMeSchema,
+} from '../../../../../libs/validations';
+import axios from 'axios';
+import toast from 'react-hot-toast';
 
-const contactFormSchema = z.object({
-  fullName: z
-    .string({ required_error: 'نام نمیتواند خالی باشد' })
-    .min(1)
-    .max(50),
-  email: z
-    .string({ required_error: 'ایمیل نمیتواند خالی باشد' })
-    .email('ایمیل نامعتبر است.'),
-  message: z
-    .string({ required_error: 'پیام نمیتواند خالی باشد' })
-    .max(500, { message: 'پیام طولانی است' }),
-});
-export type ContactFormSchema = z.infer<typeof contactFormSchema>;
 
 const useLogic = () => {
   const {
     control,
-    handleSubmit,
-    formState: { isLoading, isValid },
-  } = useForm<ContactFormSchema>({
+    handleSubmit,watch,
+    formState: { isSubmitting, isValid },
+  } = useForm<ContactMeSchema>({
     mode: 'onChange',
-    resolver: zodResolver(contactFormSchema),
+    resolver: zodResolver(contactMeSchema),
   });
 
   /* -------------------------------------------------------------------------- */
   /*                                  Handlers                                 */
   /* -------------------------------------------------------------------------- */
-
-  const handleSendEmail = async (data: ContactFormSchema) => {
-    //
+console.log(watch())
+  const handleSendEmail = async (data: ContactMeSchema) => {
+    try {
+      await axios.post('/api/contactMe', data);
+      toast.success('پیام با موفقیت ارسال شد');
+    } catch (error) {
+      toast.error('ارسال پیام با خطا مواجه شد');
+    }
   };
 
-  return { control, isLoading, isValid, handleSubmit, handleSendEmail };
+  return { control, isSubmitting, isValid, handleSubmit, handleSendEmail };
 };
 
 export default useLogic;

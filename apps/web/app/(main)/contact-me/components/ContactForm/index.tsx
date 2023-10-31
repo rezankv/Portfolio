@@ -10,7 +10,7 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit(handleSendEmail)} className="form" data-form>
       <div className="input-wrapper">
         <Controller
-          name="fullName"
+          name="body.name"
           control={control}
           render={({ field }) => (
             <input
@@ -23,7 +23,7 @@ const ContactForm = () => {
           )}
         />
         <Controller
-          name="email"
+          name="body.email"
           control={control}
           render={({ field }) => (
             <input
@@ -37,7 +37,7 @@ const ContactForm = () => {
         />
       </div>
       <Controller
-        name="message"
+        name="body.message"
         control={control}
         render={({ field }) => (
           <textarea
