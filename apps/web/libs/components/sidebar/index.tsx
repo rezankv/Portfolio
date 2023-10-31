@@ -1,5 +1,5 @@
 'use client';
-import { linkedin_link, twitter_link } from '../../constants';
+import { linkedin_link, my_email, twitter_link } from '../../constants';
 import { cn } from '../../utils';
 import useLogic from './useLogic';
 
@@ -43,10 +43,10 @@ export const Sidebar = () => {
               <p className="contact-title">ایمیل</p>
 
               <a
-                href="mailto:reza.nikravesh80@gmail.com"
+                href={`mailto:${my_email}`}
                 className="contact-link dir-ltr long-text disable-ellipsis-on-hover"
               >
-                reza.nikravesh80@gmail.com
+                {my_email}
               </a>
             </div>
           </li>
