@@ -7,6 +7,6 @@ WORKDIR /app
 ADD package*.json .
 
 # RUN npm install 
-RUN npm install --legacy-peer-deps
+# RUN npm install --legacy-peer-deps
 
 ADD . .

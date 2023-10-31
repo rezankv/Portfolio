@@ -3,7 +3,7 @@
 import { Controller } from 'react-hook-form';
 import useLogic from './useLogic';
 const ContactForm = () => {
-  const { control, handleSendEmail, handleSubmit, isLoading, isValid } =
+  const { control, handleSendEmail, handleSubmit, isValid } =
     useLogic();
 
   return (
