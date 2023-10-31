@@ -1,3 +1,4 @@
+import Providers from '../../libs/providers';
 import { Navbar, Sidebar } from '../../libs/components';
 
 export const metadata = {
@@ -7,13 +8,15 @@ export const metadata = {
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <main>
-      <Sidebar />
-      <div className="main-content">
-        <Navbar />
-        {children}
-      </div>
-    </main>
+    <Providers>
+      <main>
+        <Sidebar />
+        <div className="main-content">
+          <Navbar />
+          {children}
+        </div>
+      </main>
+    </Providers>
   );
 };
 export default Layout;
