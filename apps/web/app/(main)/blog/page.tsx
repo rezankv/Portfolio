@@ -1,3 +1,4 @@
+// TODO : جدا کردن کامپوننت پست کارد
 import Link from 'next/link';
 import { allPosts, Post } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
@@ -23,9 +24,9 @@ const Page = () => {
 
               <div className="blog-content">
                 <div className="blog-meta">
+                  <span className="dot"></span>
                   <p className="blog-category">{post.category}</p>
 
-                  <span className="dot"></span>
 
                   {/* <time datetime="2022-02-23">۵ آذر</time> */}
                 </div>
