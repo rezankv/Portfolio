@@ -1,8 +1,15 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files';
+import readingTime from 'reading-time';
+import rehypeAutolinkHeadings from 'rehype-autolink-headings';
+import rehypePrettyCode from 'rehype-pretty-code';
+import rehypeSlug from 'rehype-slug';
+import remarkGfm from 'remark-gfm';
+import GithubSlugger from 'github-slugger';
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
   filePathPattern: '**/**/posts/**/*.mdx',
+  contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
     description: { type: 'string', required: true },
@@ -33,6 +40,7 @@ export const Post = defineDocumentType(() => ({
 export const Project = defineDocumentType(() => ({
   name: 'Project',
   filePathPattern: '**/**/projects/**/*.mdx',
+  contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
     description: { type: 'string', required: true },
@@ -62,4 +70,18 @@ export const Project = defineDocumentType(() => ({
 export default makeSource({
   contentDirPath: 'libs/contents/src',
   documentTypes: [Project, Post],
+  mdx: {
+    // remarkPlugins: [remarkGfm],
+    // rehypePlugins: [
+    //   rehypeSlug,
+    //   [rehypeAutolinkHeadings, { behavior: 'append' }],
+    //   [
+    //     rehypePrettyCode,
+    //     {
+    //       theme: 'github-dark',
+    //       grid: false,
+    //     },
+    //   ],
+    // ],
+  },
 });
