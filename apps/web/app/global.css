@@ -69,6 +69,7 @@
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
+  --light-gray-80: hsla(0, 0%, 95%, 0.8);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -2171,4 +2172,26 @@ textarea.form-input::-webkit-resizer {
     height: 80px;
     background-color: hsl(35, 100%, 68%);
   }
+}
+.mdx-styles{
+  color: var(--white-1);
+}
+.mdx-styles h1:first-of-type {
+  margin-bottom: 5rem;
+}
+.mdx-styles h2 {
+  margin-bottom: 2rem;
+}
+.mdx-styles h3 {
+  margin-bottom: .5rem;
+}
+.mdx-styles p {
+  margin-bottom: 1rem;
+}
+.mdx-styles p,ul,li{
+  color: var(--light-gray-80);
+}
+
+.mdx-styles img {
+  margin-block: 2rem;
 }

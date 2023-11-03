@@ -33,7 +33,7 @@ const Page = ({ params: { slug } }: Props) => {
   console.log(MDXContent);
 
   return (
-    <article style={{ color: 'var(--white-1)', paddingTop: '8rem' }}>
+    <article className='mdx-styles'  style={{  paddingTop: '8rem' }}>
       {/* <div>
         <time
           style={{ color: 'var(--white-2)' }}
@@ -43,6 +43,7 @@ const Page = ({ params: { slug } }: Props) => {
           {format(parseISO(post.createdAt), 'LLLL d, yyyy')}
         </time>
       </div> */}
+
       <MDXContent
         components={{
           Image,
