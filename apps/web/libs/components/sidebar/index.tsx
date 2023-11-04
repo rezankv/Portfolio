@@ -1,5 +1,5 @@
 'use client';
-import { linkedin_link, twitter_link } from '../../constants';
+import { github_link, linkedin_link, my_email, telegram_link, twitter_link } from '../../constants';
 import { cn } from '../../utils';
 import useLogic from './useLogic';
 
@@ -43,15 +43,15 @@ export const Sidebar = () => {
               <p className="contact-title">ایمیل</p>
 
               <a
-                href="mailto:reza.nikravesh80@gmail.com"
+                href={`mailto:${my_email}`}
                 className="contact-link dir-ltr long-text disable-ellipsis-on-hover"
               >
-                reza.nikravesh80@gmail.com
+                {my_email}
               </a>
             </div>
           </li>
 
-          <li className="contact-item">
+          {/* <li className="contact-item">
             <div className="icon-box">
               <ion-icon name="phone-portrait-outline"></ion-icon>
             </div>
@@ -63,7 +63,7 @@ export const Sidebar = () => {
                 ۰۹۳۳۷۰۷۳۵۷۹
               </a>
             </div>
-          </li>
+          </li> */}
 
           {/* <li className="contact-item">
             <div className="icon-box">
@@ -100,7 +100,7 @@ export const Sidebar = () => {
           </li>
 
           <li className="social-item">
-            <a target="_blank" href={linkedin_link} className="social-link">
+            <a target="_blank" href={github_link} className="social-link">
               <ion-icon name="logo-github"></ion-icon>
             </a>
           </li>
@@ -112,7 +112,7 @@ export const Sidebar = () => {
           </li>
 
           <li className="social-item">
-            <a target="_blank" href={twitter_link} className="social-link">
+            <a target="_blank" href={telegram_link} className="social-link">
               {/* <ion-icon name="logo-telegram"></ion-icon> */}
               <img src="/images/icon-telegram-grey.svg" alt="mobile app icon"  />
             </a>

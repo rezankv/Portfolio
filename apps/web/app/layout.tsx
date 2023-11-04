@@ -1,6 +1,7 @@
 // TODO یک پکیج برای استس ها باید بسازیم نه اینکه بزاریم توی پوشه پابلیک
 import Script from 'next/script';
 import './global.css';
+import "@code-hike/mdx/dist/index.css"
 
 export const metadata = {
   title: 'Welcome to web',
