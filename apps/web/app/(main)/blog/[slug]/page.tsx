@@ -1,7 +1,11 @@
+"use client"
 import { getPostBySlug } from '../../../../libs/utils';
 import { allPosts } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { format, parseISO } from 'date-fns';
+import { useMDXComponent } from 'next-contentlayer/hooks';
+import Image from 'next/image';
+import BlogPostHeader from './components/BlogPostHeader';
 
 interface GenerateMetaDataArgs {
   params: { slug: string };
@@ -21,15 +25,17 @@ interface Props {
 //   return { title: post.title };
 // };
 
-export const generateStaticParams = async () =>
-  allPosts.map((blog) => ({ url: blog.slug }));
-
 const Page = ({ params: { slug } }: Props) => {
   const post = getPostBySlug(slug);
-  if (!post) return notFound();
+
+  if (!post) notFound();
+
+  const MDXContent = useMDXComponent(post.body.code);
+
+
   return (
-    <article style={{ color: 'var(--white-1)' }}>
-      <div>
+    <article className="mdx-styles" style={{ paddingTop: '8rem' }}>
+      {/* <div>
         <time
           style={{ color: 'var(--white-2)' }}
           dateTime={post.createdAt}
@@ -37,14 +43,22 @@ const Page = ({ params: { slug } }: Props) => {
         >
           {format(parseISO(post.createdAt), 'LLLL d, yyyy')}
         </time>
-        <h1 className="text-3xl font-bold">{post.title}</h1>
-      </div>
-      <div
-        className="[&>*]:mb-3 [&>*:last-child]:mb-0"
-        dangerouslySetInnerHTML={{ __html: post.body.html }}
+      </div> */}
+      <BlogPostHeader
+        banner={{ alt: post.title, src: post.banner }}
+        description={post.description}
+        title={post.title}
+      />
+      <MDXContent
+        components={{
+          Image,
+        }}
       />
     </article>
   );
 };
+
+export const generateStaticParams = async () =>
+  allPosts.map((blog) => ({ url: blog.slug }));
 
 export default Page;
