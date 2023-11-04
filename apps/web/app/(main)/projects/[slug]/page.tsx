@@ -41,7 +41,7 @@ const Page = ({ params: { slug } }: Props) => {
       </div>
       <div
         className="[&>*]:mb-3 [&>*:last-child]:mb-0"
-        // dangerouslySetInnerHTML={{ __html: project.body.html }}
+        dangerouslySetInnerHTML={{ __html: project.body.html }}
       />
     </article>
   );
