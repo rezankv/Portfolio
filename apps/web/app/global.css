@@ -65,11 +65,13 @@
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --white-3: white;
+  --white-4: #fff;
   --orange-yellow-crayola: hsl(45, 100%, 72%);
   --vegas-gold: hsl(45, 54%, 58%);
   --light-gray: hsl(0, 0%, 84%);
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --light-gray-80: hsla(0, 0%, 95%, 0.8);
+  --light-gray-60:#d1d5dbcc;
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
   /**
@@ -2173,25 +2175,49 @@ textarea.form-input::-webkit-resizer {
     background-color: hsl(35, 100%, 68%);
   }
 }
-.mdx-styles{
-  color: var(--white-1);
+.mdx-styles {
+  color: var(--white-4);
 }
-.mdx-styles h1:first-of-type {
-  margin-bottom: 5rem;
+.mdx-styles > h1:first-of-type {
+  margin-bottom: 1.5rem;
+  font-size: 1.7rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+}
+.mdx-styles .banner {
+  object-fit: contain;
+  width: 100% !important;
+  position: relative !important;
+  height: unset !important;
 }
 .mdx-styles h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
 }
 .mdx-styles h3 {
-  margin-bottom: .5rem;
+  margin-bottom: 0.7rem;
 }
 .mdx-styles p {
   margin-bottom: 1rem;
 }
-.mdx-styles p,ul,li{
-  color: var(--light-gray-80);
+.mdx-styles p,
+ul,
+li {
+  color: var(--light-gray-60);
+}
+.mdx-styles p,li{
+  line-height: 2rem;
+}
+.mdx-styles ul {
+  margin-bottom: 1rem;
 }
 
 .mdx-styles img {
-  margin-block: 2rem;
+  margin-block: 2.2rem;
+}
+.ch-codegroup,
+.ch-codeblock {
+  direction: ltr;
+}
+.ch-codeblock span{
+  display: initial;
 }

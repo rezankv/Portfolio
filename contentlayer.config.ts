@@ -5,6 +5,7 @@ import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import remarkGfm from 'remark-gfm';
 import GithubSlugger from 'github-slugger';
+import { remarkCodeHike } from '@code-hike/mdx';
 
 export const Post = defineDocumentType(() => ({
   name: 'Post',
@@ -71,6 +72,16 @@ export default makeSource({
   contentDirPath: 'libs/contents/src',
   documentTypes: [Project, Post],
   mdx: {
+    remarkPlugins: [
+      [
+        remarkCodeHike,
+        {
+          theme: "github-dark-dimmed",
+          lineNumbers: true,
+          showCopyButton: true,
+        },
+      ],
+    ],
     // remarkPlugins: [remarkGfm],
     // rehypePlugins: [
     //   rehypeSlug,
