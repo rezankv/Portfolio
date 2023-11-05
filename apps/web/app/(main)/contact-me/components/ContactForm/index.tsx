@@ -2,8 +2,10 @@
 'use client';
 import { Controller } from 'react-hook-form';
 import useLogic from './useLogic';
+import { Loader } from '../../../../../libs/components';
+
 const ContactForm = () => {
-  const { control, handleSendEmail, handleSubmit, isValid } =
+  const { control, isSubmitting, handleSendEmail, handleSubmit, isValid } =
     useLogic();
 
   return (
@@ -50,8 +52,19 @@ const ContactForm = () => {
       />
 
       <button className="form-btn" type="submit" disabled={!isValid}>
-        <ion-icon name="paper-plane"></ion-icon>
-        <span>ارسال پیام</span>
+        {isSubmitting ? (
+          <Loader
+            style={{
+              width: '30px',
+              height: '30px',
+            }}
+          />
+        ) : (
+          <>
+            <ion-icon name="paper-plane"></ion-icon>
+            <span>ارسال پیام</span>
+          </>
+        )}
       </button>
     </form>
   );

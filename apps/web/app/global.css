@@ -2221,3 +2221,14 @@ li {
 .ch-codeblock span{
   display: initial;
 }
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px dotted var(--orange-yellow-crayola);
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+}
