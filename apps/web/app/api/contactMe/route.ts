@@ -25,7 +25,14 @@ export async function POST(request: Request) {
     return NextResponse.json(data);
   } catch (error) {
     if (error instanceof ZodError) {
-      return NextResponse.json({ message: error.issues[0].message });
-    } else return NextResponse.json({ message: 'خطا در ارسال پیام' });
+      return NextResponse.json(
+        { message: error.issues[0].message },
+        { status: 400 }
+      );
+    } else
+      return NextResponse.json(
+        { message: 'خطا در ارسال پیام' },
+        { status: 500 }
+      );
   }
 }
