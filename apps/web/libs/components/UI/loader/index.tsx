@@ -1,10 +1,9 @@
+import { cn } from '../../../../libs/utils';
+import { HTMLAttributes } from 'react';
 
-export const Loader = () => {
+interface Props extends HTMLAttributes<HTMLSpanElement> {}
+export const Loader = ({ className = '', ...rest }: Props) => {
   return (
-    <div className="spinner-square">
-      <div className="square-1 square"></div>
-      <div className="square-2 square"></div>
-      <div className="square-3 square"></div>
-    </div>
+    <span className={cn('loader', className)} {...rest}></span>
   );
 };

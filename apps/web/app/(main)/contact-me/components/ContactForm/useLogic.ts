@@ -11,7 +11,7 @@ import toast from 'react-hot-toast';
 const useLogic = () => {
   const {
     control,
-    handleSubmit,watch,
+    handleSubmit,
     formState: { isSubmitting, isValid },
   } = useForm<ContactMeSchema>({
     mode: 'onChange',
@@ -21,7 +21,6 @@ const useLogic = () => {
   /* -------------------------------------------------------------------------- */
   /*                                  Handlers                                 */
   /* -------------------------------------------------------------------------- */
-console.log(watch())
   const handleSendEmail = async (data: ContactMeSchema) => {
     try {
       await axios.post('/api/contactMe', data);
