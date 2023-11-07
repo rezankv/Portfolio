@@ -1,4 +1,3 @@
-"use client"
 import { getPostBySlug } from '../../../../libs/utils';
 import { allPosts } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
