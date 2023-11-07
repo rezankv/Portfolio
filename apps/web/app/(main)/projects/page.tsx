@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { compareDesc } from 'date-fns';
 import { generateUrl } from '../../../libs/utils';
 import { SINGLE_PROJECTS_ROUTE } from '../../../libs/constants';
+import { UnderDevelopmentMessage } from '../../../libs/components';
 
 const Page = () => {
   const projects = allProjects.sort((a, b) =>
@@ -93,11 +94,12 @@ const Page = () => {
     <>
       <article className="portfolio" style={{ minHeight: 'unset' }}>
         <header>
-          <h2 className="h2 article-title">نمونه کار ها</h2>
+          <h2 className="h2 article-title">پروژه ها</h2>
         </header>
         <section className="projects">
-          {renderFilters()}
-          {renderProjects(projects)}
+          {/* {renderFilters()} */}
+          {/* {renderProjects(projects)} */}
+          <UnderDevelopmentMessage />
         </section>
       </article>
     </>
