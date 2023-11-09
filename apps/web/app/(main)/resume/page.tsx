@@ -156,25 +156,30 @@ const Page = () => {
             من در بنتوک سیستم بر روی یک پروژه رزرو نوبت و ارئه خدمات مربوط به
             چتر بازی ( Sky Diving ) کار میکردم .
             <br />
+            <br />
             وظایف من :
           </p>
           <ul style={{ paddingInline: '2rem' }} className="timeline-text">
             <li className="list-style-type-disc">
-              همکاری در توسعه رابط کاربری اپلیکیشن تحت وب کاربران و اپلیکیشن های
-              تحت وب مدیریت سامانه (پنل های ادمین)
+            ارائه راهکار های مناسب برای افزایش پرفورمنس بر اساس best practice ها
+
             </li>
             <li className="list-style-type-disc">
-              توسعه کامپوننت های Reusable اپلیکیشن ها برای استفاده های مجدد
+            پیاده سازی قالب ایمیل های تبلیغاتی و اطلاع رسانی با استفاده از تمپلیت انجین Handlebars 
+
             </li>
             <li className="list-style-type-disc">
-              تعامل مستمر با تیم بک اند و دیزاین برای پیاده سازی فیچر ها
+            استفاده از React Query برای عملیات Data fetching & Data caching
+
             </li>
             <li className="list-style-type-disc">
-              ارائه راه حل های مناسب برای افزایش پرفورمنس اپلیکیشن
+            پیاده سازی عملیات CRUD  و همچنین  search , sort , filter  در بخش های مختلف
+
             </li>
             <li className="list-style-type-disc">
-              پیاده سازی قالب ایمیل های تبلیفاتی و اطلاع رسانی با استفاده از
-              Handlbars
+          
+            استفاده از ابزار هایی نظیر Docker , Postgres , NX monorepo در طول توسعه پروژه
+
             </li>
           </ul>
         </li>
@@ -200,21 +205,25 @@ const Page = () => {
             من در تیم توسعه نرم افزار دانشگاه صنعتی جندی شاپور بر روی پروژه پیام
             رسان تحت وب داخلی دانشگاه کار میکردم.
             <br />
+            <br />
             وظایف من :
           </p>
           <ul style={{ paddingInline: '2rem' }} className="timeline-text">
             <li className="list-style-type-disc">
-              همکاری در توسعه رابط کاربری شامل ساخت کامپوننت ها و صفحات اصلی{' '}
+            ساخت کامپوننت های Reusable با کاستومایز کردن material ui
+
             </li>
             <li className="list-style-type-disc">
-              تعامل مستمر با تیم بک اند برای پیاده سازی فیچر های جدید
+            پیاده سازی Redux Toolkit و Redux thunk برای مدیریت استیت و ارتباط با API
+
             </li>
             <li className="list-style-type-disc">
-              بررسی کد های دیگر توسعه دهندگان (code review)
+            استفاده از Axios interceptors برای کار با Api endpoint های Protected
+
             </li>
             <li className="list-style-type-disc">
-              بررسی و تحقیق درمورد پیدا کردن ابزار های مناسب برای توسعه و سریع
-              تر
+            بررسی کد های دیگر توسعه دهندگان (Code Review)
+
             </li>
           </ul>
         </li>
