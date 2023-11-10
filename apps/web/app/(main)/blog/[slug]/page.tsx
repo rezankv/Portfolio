@@ -4,7 +4,7 @@ import { notFound } from 'next/navigation';
 import { format, parseISO } from 'date-fns';
 import { useMDXComponent } from 'next-contentlayer/hooks';
 import Image from 'next/image';
-import BlogPostHeader from './components/BlogPostHeader';
+import BlogPostHeader from './components/BlogPostContent/components/BlogPostHeader';
 import { Metadata } from 'next';
 import BlogPostContent from './components/BlogPostContent';
 
