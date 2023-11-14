@@ -26,6 +26,9 @@ const Page = ({ params: { slug } }: PageProps) => {
   );
 };
 
+export const generateStaticParams = async () =>
+  allPosts.map((blog) => ({ url: blog.slug }));
+
 export default Page;
 
 interface GenerateMetaDataArgs {
@@ -43,5 +46,3 @@ export async function generateMetadata({
   };
 }
 
-export const generateStaticParams = async () =>
-  allPosts.map((blog) => ({ url: blog.slug }));

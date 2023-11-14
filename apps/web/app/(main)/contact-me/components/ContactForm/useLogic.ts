@@ -21,7 +21,6 @@ const useLogic = () => {
   /* -------------------------------------------------------------------------- */
   /*                                  Handlers                                 */
   /* -------------------------------------------------------------------------- */
-
   const handleSendEmail = async (data: ContactMeSchema) => {
     try {
       await axios.post('/api/contactMe', data);
