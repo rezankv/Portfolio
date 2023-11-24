@@ -14,6 +14,7 @@ const nextConfig = {
     svgr: false,
   },
   images: {
+    minimumCacheTTL: 60,
     remotePatterns: [
       {
         protocol: 'https',
