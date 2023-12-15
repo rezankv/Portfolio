@@ -1,5 +1,5 @@
 'use client';
-// TODO ما الان چون میخوایم ادرس فعلی رو داشته باشیم مجبور شدیم از یوز کلاینت استفاده کنیم . ولی ایا راهی هست که ادرس فعلی رو سمت سرور دریافتش کنیم و کامپوننت مون سرور کامپوننت باشه ؟
+// TODO  find a way to get current url on server side  
 import {
   HOME_ROUTE,
   BLOG_ROUTE,

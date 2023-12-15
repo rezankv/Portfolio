@@ -1,4 +1,4 @@
-// TODO : جدا کردن کامپوننت پست کارد
+// TODO : create a post card component
 import Link from 'next/link';
 import { allPosts, Post } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';

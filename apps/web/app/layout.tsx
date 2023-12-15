@@ -1,4 +1,4 @@
-// TODO یک پکیج برای استس ها باید بسازیم نه اینکه بزاریم توی پوشه پابلیک
+// TODO create an assets folder to prevent push assets to public folder
 import Script from 'next/script';
 import './global.css';
 import "@code-hike/mdx/dist/index.css"
