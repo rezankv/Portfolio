@@ -1,4 +1,5 @@
 'use client';
+import Image from 'next/image';
 import { github_link, linkedin_link, my_email, telegram_link, twitter_link } from '../../constants';
 import { cn } from '../../utils';
 import useLogic from './useLogic';
@@ -12,11 +13,11 @@ export const Sidebar = () => {
     >
       <div className="sidebar-info">
         <figure className="avatar-box">
-          <img src="/images/my-avatar.png" alt="Richard hanrick" width="80" />
+          <img src="/images/my-avatar.png" alt="logo" width="80" />
         </figure>
 
         <div className="info-content">
-          <h1 className="name" title="Richard hanrick">
+          <h1 className="name" title="Reza Nikravesh">
             رضا نیک روش
           </h1>
 
@@ -114,7 +115,7 @@ export const Sidebar = () => {
           <li className="social-item">
             <a target="_blank" href={telegram_link} className="social-link">
               {/* <ion-icon name="logo-telegram"></ion-icon> */}
-              <img src="/images/icon-telegram-grey.svg" alt="mobile app icon"  />
+              <Image width={18} height={18} src="/images/icon-telegram-grey.svg" alt="mobile app icon"  />
             </a>
           </li>
 
