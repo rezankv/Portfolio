@@ -5,6 +5,7 @@ import { bent_oak_systems_link, jsu_link } from '@web/constants';
 
 // ** components
 import { CustomTooltip } from '@web/components';
+import Image from 'next/image';
 
 const skills = [
   {
@@ -289,8 +290,9 @@ const Page = () => {
                     'linear-gradient( to bottom right, hsl(0, 0%, 36%) 0%, hsla(0, 0%, 48%, 0) 50% );',
                 }}
               >
-                <img
-                  style={{ width: '30px' }}
+                <Image
+                  width="30"
+                  height="30"
                   src={item.icon.src}
                   alt={item.icon.alt}
                 />

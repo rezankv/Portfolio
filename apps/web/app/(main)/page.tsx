@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 // ** constants
 import { BLOG_ROUTE, PROJECTS_ROUTE, RESUME_ROUTE } from '@web/constants';
@@ -61,11 +62,11 @@ const Page = () => {
                 </p>
               </div>
               <div className="service-icon-box">
-                <img
-                  src="/images/icon-dev.svg
-            "
+                <Image
+                  src="/images/icon-dev.svg"
                   alt="design icon"
                   width="40"
+                  height="40"
                 />
               </div>
             </li>
@@ -80,10 +81,11 @@ const Page = () => {
                 </p>
               </div>
               <div className="service-icon-box">
-                <img
+                <Image
                   src="/images/icon-wordpress.svg"
                   alt="Web development icon"
                   width="40"
+                  height="40"
                 />
               </div>
             </li>
@@ -98,10 +100,11 @@ const Page = () => {
                 </p>
               </div>
               <div className="service-icon-box">
-                <img
+                <Image
                   src="/images/icon-telegram.svg"
                   alt="mobile app icon"
                   width="40"
+                  height="40"
                 />
               </div>
             </li>
@@ -115,10 +118,11 @@ const Page = () => {
                 </p>
               </div>
               <div className="service-icon-box">
-                <img
+                <Image
                   src="/images/icon-people.svg"
                   alt="camera icon"
                   width="40"
+                  height="40"
                 />
               </div>
             </li>
@@ -255,7 +259,7 @@ const Page = () => {
               <figure className="modal-avatar-box">
                 <img
                   src="/images/avatar-1.png"
-                  alt="Daniel lewis"
+                  alt="customer name"
                   width="80"
                   data-modal-img
                 />
