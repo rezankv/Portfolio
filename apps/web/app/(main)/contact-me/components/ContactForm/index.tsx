@@ -1,8 +1,12 @@
 // TODO use server action for send form later
 'use client';
 import { Controller } from 'react-hook-form';
+
+// ** components
+import { Loader } from '@web/components';
+
+// ** locals
 import useLogic from './useLogic';
-import { Loader } from '../../../../../libs/components';
 
 const ContactForm = () => {
   const { control, isSubmitting, handleSendEmail, handleSubmit, isValid } =

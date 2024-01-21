@@ -1,7 +1,9 @@
 // TODO create an assets folder to prevent push assets to public folder
 import Script from 'next/script';
-import './global.css';
 import "@code-hike/mdx/dist/index.css"
+
+// ** locals
+import './global.css';
 
 export const metadata = {
   title: 'Welcome to web',

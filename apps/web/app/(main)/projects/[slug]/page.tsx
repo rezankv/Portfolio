@@ -1,7 +1,9 @@
-import { getProjectBySlug } from '../../../../libs/utils';
 import { allProjects } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
 import { format, parseISO } from 'date-fns';
+
+// ** utils
+import { getProjectBySlug } from '@web/utils';
 
 interface GenerateMetaDataArgs {
   params: { slug: string };

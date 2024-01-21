@@ -2,9 +2,13 @@
 import { Post } from 'contentlayer/generated';
 import BlogPostHeader from './components/BlogPostHeader';
 import { useMDXComponent } from 'next-contentlayer/hooks';
-import Image from 'next/image'
-import EditOnGithubButton from '../../../../../../libs/components/EditOnGithubButton';
-import { generateEditOnGithubUrl } from '../../../../../../libs/utils';
+import Image from 'next/image';
+
+// ** components
+import { EditOnGithubButton } from '@web/components';
+
+// ** utils
+import { generateEditOnGithubUrl } from '@web/utils';
 
 interface Props {
   post: Post;
@@ -33,7 +37,9 @@ const BlogPostContent = ({ post }: Props) => {
           Image,
         }}
       />
-      <EditOnGithubButton  href={generateEditOnGithubUrl(post._raw.flattenedPath)}/>
+      <EditOnGithubButton
+        href={generateEditOnGithubUrl(post._raw.flattenedPath)}
+      />
     </article>
   );
 };
