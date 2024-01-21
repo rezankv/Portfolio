@@ -4,6 +4,7 @@ import { allPosts, Post } from 'contentlayer/generated';
 import { compareDesc } from 'date-fns';
 import { generateUrl } from '../../../libs/utils';
 import { SINGLE_BLOG_ROUTE } from '../../../libs/constants';
+import Image from 'next/image';
 
 const Page = () => {
   const posts = allPosts.sort((a, b) =>
@@ -19,14 +20,19 @@ const Page = () => {
               href={generateUrl(SINGLE_BLOG_ROUTE, { slug: post.slug }, {})}
             >
               <figure className="blog-banner-box">
-                <img src={post.thumbnail} alt={post.title} loading="lazy" />
+                <Image
+                  width={100}
+                  height={100}
+                  src={post.thumbnail}
+                  alt={post.title}
+                  loading="lazy"
+                />
               </figure>
 
               <div className="blog-content">
                 <div className="blog-meta">
                   <span className="dot"></span>
                   <p className="blog-category">{post.category}</p>
-
 
                   {/* <time datetime="2022-02-23">۵ آذر</time> */}
                 </div>
