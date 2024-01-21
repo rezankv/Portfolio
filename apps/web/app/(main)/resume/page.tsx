@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { bent_oak_systems_link, jsu_link } from '../../../libs/constants';
 import { CustomTooltip } from '../../../libs/components';
+import Image from 'next/image';
 
 const skills = [
   {
@@ -161,25 +162,23 @@ const Page = () => {
           </p>
           <ul style={{ paddingInline: '2rem' }} className="timeline-text">
             <li className="list-style-type-disc">
-            ارائه راهکار های مناسب برای افزایش پرفورمنس بر اساس best practice ها
-
+              ارائه راهکار های مناسب برای افزایش پرفورمنس بر اساس best practice
+              ها
             </li>
             <li className="list-style-type-disc">
-            پیاده سازی قالب ایمیل های تبلیغاتی و اطلاع رسانی با استفاده از تمپلیت انجین Handlebars 
-
+              پیاده سازی قالب ایمیل های تبلیغاتی و اطلاع رسانی با استفاده از
+              تمپلیت انجین Handlebars
             </li>
             <li className="list-style-type-disc">
-            استفاده از React Query برای عملیات Data fetching & Data caching
-
+              استفاده از React Query برای عملیات Data fetching & Data caching
             </li>
             <li className="list-style-type-disc">
-            پیاده سازی عملیات CRUD  و همچنین  search , sort , filter  در بخش های مختلف
-
+              پیاده سازی عملیات CRUD و همچنین search , sort , filter در بخش های
+              مختلف
             </li>
             <li className="list-style-type-disc">
-          
-            استفاده از ابزار هایی نظیر Docker , Postgres , NX monorepo در طول توسعه پروژه
-
+              استفاده از ابزار هایی نظیر Docker , Postgres , NX monorepo در طول
+              توسعه پروژه
             </li>
           </ul>
         </li>
@@ -210,20 +209,18 @@ const Page = () => {
           </p>
           <ul style={{ paddingInline: '2rem' }} className="timeline-text">
             <li className="list-style-type-disc">
-            ساخت کامپوننت های Reusable با کاستومایز کردن material ui
-
+              ساخت کامپوننت های Reusable با کاستومایز کردن material ui
             </li>
             <li className="list-style-type-disc">
-            پیاده سازی Redux Toolkit و Redux thunk برای مدیریت استیت و ارتباط با API
-
+              پیاده سازی Redux Toolkit و Redux thunk برای مدیریت استیت و ارتباط
+              با API
             </li>
             <li className="list-style-type-disc">
-            استفاده از Axios interceptors برای کار با Api endpoint های Protected
-
+              استفاده از Axios interceptors برای کار با Api endpoint های
+              Protected
             </li>
             <li className="list-style-type-disc">
-            بررسی کد های دیگر توسعه دهندگان (Code Review)
-
+              بررسی کد های دیگر توسعه دهندگان (Code Review)
             </li>
           </ul>
         </li>
@@ -289,8 +286,9 @@ const Page = () => {
                     'linear-gradient( to bottom right, hsl(0, 0%, 36%) 0%, hsla(0, 0%, 48%, 0) 50% );',
                 }}
               >
-                <img
-                  style={{ width: '30px' }}
+                <Image
+                  width="30"
+                  height="30"
                   src={item.icon.src}
                   alt={item.icon.alt}
                 />
