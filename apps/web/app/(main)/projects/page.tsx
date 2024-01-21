@@ -1,9 +1,15 @@
 import { allProjects, Project } from 'contentlayer/generated';
 import Link from 'next/link';
 import { compareDesc } from 'date-fns';
-import { generateUrl } from '../../../libs/utils';
-import { SINGLE_PROJECTS_ROUTE } from '../../../libs/constants';
-import { UnderDevelopmentMessage } from '../../../libs/components';
+
+// ** utils
+import { generateUrl } from '@web/utils';
+
+// ** constants
+import { SINGLE_PROJECTS_ROUTE } from '@web/constants';
+
+// ** components
+import { UnderDevelopmentMessage } from '@web/components';
 
 const Page = () => {
   const projects = allProjects.sort((a, b) =>

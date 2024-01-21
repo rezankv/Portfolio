@@ -1,6 +1,8 @@
-import Image from 'next/image';
-import { BLOG_ROUTE, PROJECTS_ROUTE, RESUME_ROUTE } from '../../libs/constants';
 import Link from 'next/link';
+import Image from 'next/image';
+
+// ** constants
+import { BLOG_ROUTE, PROJECTS_ROUTE, RESUME_ROUTE } from '@web/constants';
 
 const Page = () => {
   return (

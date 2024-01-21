@@ -1,6 +1,10 @@
 import Link from 'next/link';
-import { bent_oak_systems_link, jsu_link } from '../../../libs/constants';
-import { CustomTooltip } from '../../../libs/components';
+
+// ** constants
+import { bent_oak_systems_link, jsu_link } from '@web/constants';
+
+// ** components
+import { CustomTooltip } from '@web/components';
 import Image from 'next/image';
 
 const skills = [

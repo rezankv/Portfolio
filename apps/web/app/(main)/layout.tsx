@@ -1,5 +1,8 @@
-import Providers from '../../libs/providers';
-import { Navbar, Sidebar } from '../../libs/components';
+// ** components
+import { Navbar, Sidebar } from '@web/components';
+
+// ** providers
+import Providers from '@web/providers';
 
 export const metadata = {
   title: 'رضا نیک روش | توسعه دهنده وب',

@@ -1,3 +1,4 @@
+// ** locals
 import ContactForm from './components/ContactForm';
 
 const Page = () => {

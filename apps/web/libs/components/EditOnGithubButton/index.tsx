@@ -5,7 +5,7 @@ import React from 'react';
 interface Props {
   href: string;
 }
-const EditOnGithubButton = ({ href }: Props) => {
+export const EditOnGithubButton = ({ href }: Props) => {
   return (
     <Link
       href={href}
@@ -29,4 +29,4 @@ const EditOnGithubButton = ({ href }: Props) => {
   );
 };
 
-export default EditOnGithubButton;
+

@@ -1,9 +1,15 @@
-import { my_email } from '../../../libs/constants';
-import EmailTemplate from '../../../libs/components/EmailTemplates/contactMe';
 import { NextResponse } from 'next/server';
-import { Resend } from 'resend';
-import { contactMeSchema } from '../../../libs/validations';
 import { ZodError } from 'zod';
+import { Resend } from 'resend';
+
+// ** constants
+import { my_email } from '@web/constants';
+
+// ** components
+import { ContactMeTemplate } from '@web/components';
+
+// ** validations
+import { contactMeSchema } from '@web/validations';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -18,7 +24,7 @@ export async function POST(request: Request) {
       from: 'Acme <onboarding@resend.dev>',
       to: [my_email],
       subject: 'پیام از کاربران سایت',
-      react: EmailTemplate({ email, message, name }),
+      react: ContactMeTemplate({ email, message, name }),
       text: '',
     });
 

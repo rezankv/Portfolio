@@ -1,12 +1,10 @@
-import { useForm } from 'react-hook-form';
-import { zodResolver } from '@hookform/resolvers/zod';
-import {
-  ContactMeSchema,
-  contactMeSchema,
-} from '../../../../../libs/validations';
 import axios from 'axios';
 import toast from 'react-hot-toast';
+import { useForm } from 'react-hook-form';
+import { zodResolver } from '@hookform/resolvers/zod';
 
+// ** validations
+import { ContactMeSchema, contactMeSchema } from '@web/validations';
 
 const useLogic = () => {
   const {
