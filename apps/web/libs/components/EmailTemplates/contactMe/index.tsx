@@ -4,7 +4,7 @@ interface Props {
   message: string;
 }
 
-const ContactMeTemplate: React.FC<Props> = ({ name, email, message }) => (
+export const ContactMeTemplate: React.FC<Props> = ({ name, email, message }) => (
   <div>
     <h1>پیام از طرف کاربر سایت</h1>
     <h4>نام :‌ {name}</h4>
@@ -13,4 +13,4 @@ const ContactMeTemplate: React.FC<Props> = ({ name, email, message }) => (
     <p>پیام :‌ {message}</p>
   </div>
 );
-export default ContactMeTemplate;
+

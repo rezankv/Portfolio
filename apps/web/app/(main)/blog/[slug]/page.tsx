@@ -1,11 +1,10 @@
-import { getPostBySlug } from '../../../../libs/utils';
+import { Metadata } from 'next';
 import { allPosts } from 'contentlayer/generated';
 import { notFound } from 'next/navigation';
-import { format, parseISO } from 'date-fns';
-import { useMDXComponent } from 'next-contentlayer/hooks';
-import Image from 'next/image';
-import BlogPostHeader from './components/BlogPostContent/components/BlogPostHeader';
-import { Metadata } from 'next';
+
+// ** utils
+import { getPostBySlug } from '@web/utils';
+// ** locals
 import BlogPostContent from './components/BlogPostContent';
 
 interface PageProps {
@@ -14,16 +13,12 @@ interface PageProps {
   };
 }
 
-
 const Page = ({ params: { slug } }: PageProps) => {
   const post = getPostBySlug(slug);
 
   if (!post) notFound();
 
-
-  return (
-    <BlogPostContent post={post}/>
-  );
+  return <BlogPostContent post={post} />;
 };
 
 export const generateStaticParams = async () =>
@@ -45,4 +40,3 @@ export async function generateMetadata({
     description: post.description,
   };
 }
-

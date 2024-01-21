@@ -1,10 +1,11 @@
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
 interface Props {
   href: string;
 }
-const EditOnGithubButton = ({ href }: Props) => {
+export const EditOnGithubButton = ({ href }: Props) => {
   return (
     <Link
       href={href}
@@ -16,8 +17,10 @@ const EditOnGithubButton = ({ href }: Props) => {
       }}
       target="_blank"
     >
-      <img
-        style={{ width: '20px', marginBlock: '0' }}
+      <Image
+        width={20}
+        height={20}
+        style={{ marginBlock: '0' }}
         src={'/images/icon-github.svg'}
         alt={'github-icon'}
       />
@@ -26,4 +29,4 @@ const EditOnGithubButton = ({ href }: Props) => {
   );
 };
 
-export default EditOnGithubButton;
+

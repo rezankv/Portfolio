@@ -1,5 +1,7 @@
 import Link from 'next/link';
-import { HOME_ROUTE } from '../libs/constants';
+
+// ** constants
+import { HOME_ROUTE } from '@web/constants';
 
 const Page = () => {
   return (
