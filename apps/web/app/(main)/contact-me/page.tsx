@@ -22,7 +22,6 @@ const Page = () => {
 
         <section className="contact-form">
           <h3 className="h3 form-title">فرم تماس</h3>
-
           <ContactForm />
         </section>
       </article>

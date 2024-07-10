@@ -1,11 +1,15 @@
+import Image from 'next/image';
 import Link from 'next/link';
 
 // ** constants
-import { bent_oak_systems_link, jsu_link } from '@web/constants';
+import { _7Learn_link, bent_oak_systems_link, jsu_link } from '@web/constants';
 
 // ** components
 import { CustomTooltip } from '@web/components';
-import Image from 'next/image';
+ 
+ 
+
+ 
 
 const skills = [
   {
@@ -140,6 +144,45 @@ const Page = () => {
 
       <ol className="timeline-list">
         <li className="timeline-item">
+          <h4 className="h4 timeline-item-title">
+            7Learn (
+            <Link
+              prefetch={false}
+              target="_blank"
+              className="d-inline text-white"
+              href={_7Learn_link}
+            >
+              +
+            </Link>
+            ) - تهران (دورکاری)
+          </h4>
+
+          <span>
+            <i>توسعه دهنده Frontend (اسفند ۱۴۰۲ - تیر ۱۴۰۳)</i>
+          </span>
+
+          <p className="timeline-text">
+            من در 7Learn به پیاده سازی طرح ui/ux پروژه های SSR با اسکیل بزرگ با
+            sass , jquery و html مشغول بودم.
+            <br />
+            <br />
+            وظایف من :
+          </p>
+          <ul style={{ paddingInline: '2rem' }} className="timeline-text">
+            <li className="list-style-type-disc">
+              پیاده سازی pixel perfect طرح ui
+            </li>
+            <li className="list-style-type-disc">
+              ساخت کامپوننت ها به صورت pure با استفاده از sass و jquery
+            </li>
+            <li className="list-style-type-disc">ایجاد ui kit پروژه</li>
+            <li className="list-style-type-disc">
+              استفاده از handlebars برای ایجاد صفحات
+            </li>
+            <li className="list-style-type-disc">کانفیگ کردن vite</li>
+          </ul>
+        </li>
+        <li className="timeline-item" style={{ marginTop: '1rem' }}>
           <h4 className="h4 timeline-item-title">
             Bent Oak Systems (
             <Link
