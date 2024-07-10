@@ -1,14 +1,13 @@
-// TODO : create a post card component
 import Link from 'next/link';
 import { compareDesc } from 'date-fns';
 import { allPosts, Post } from 'contentlayer/generated';
+import Image from 'next/image';
 
 // ** utils
 import { generateUrl } from '@web/utils';
 
 // ** constants
 import { SINGLE_BLOG_ROUTE } from '@web/constants';
-import Image from 'next/image';
 
 const Page = () => {
   const posts = allPosts.sort((a, b) =>
