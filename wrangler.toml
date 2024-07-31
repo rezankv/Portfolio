@@ -1,4 +1,4 @@
-name = "rezankv.online"
+name = "rezankv"
 type = "javascript"
 pages_build_output_dir = "dist/apps/web/.next"
 
