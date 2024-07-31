@@ -1,9 +1,1 @@
-name = "rezankv"
-type = "javascript"
-pages_build_output_dir = "dist/apps/web/.next"
 
-[build]
-command = "npm install --legacy-peer-deps && npx nx run web:build --prod"
-
-
-[env.production]
