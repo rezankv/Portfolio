@@ -1,0 +1,10 @@
+name = "project-name"
+type = "javascript"
+
+[build]
+command = "npm install --legacy-peer-deps && npx nx run web:build --prod"
+
+[triggers]
+branches = ["production","develop"]
+
+[env.production]
