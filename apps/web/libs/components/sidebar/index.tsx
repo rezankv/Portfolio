@@ -86,7 +86,7 @@ export const Sidebar = () => {
             <div className="contact-info">
               <p className="contact-title">مکان</p>
 
-              <address>ایران - خوزستان - اهواز</address>
+              <address>خوزستان - دزفول</address>
             </div>
           </li>
         </ul>
