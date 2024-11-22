@@ -1,7 +1,16 @@
 import Link from 'next/link';
 
-// ** constants
+// constants
 import { HOME_ROUTE } from '@/constants';
+
+
+export const metadata = {
+  title: "محتوا یافت نشد",
+  description: "متاسفانه محتوای مورد نظر یافت نشد",
+  icons: {
+    icon: "/images/logo.svg",
+  },
+}
 
 const Page = () => {
   return (
