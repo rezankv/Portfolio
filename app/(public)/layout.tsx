@@ -4,10 +4,12 @@ import { Navbar, Sidebar } from "@/components"
 // locals
 import "../global.css"
 
-
 export const metadata = {
   title: "رضا نیک روش | توسعه دهنده وب",
   description: "رضا نیک روش | توسعه دهنده وب",
+  icons: {
+    icon: "/images/logo.svg",
+  },
 }
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
