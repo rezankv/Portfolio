@@ -19,9 +19,20 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/components": ["./lib/components/index.ts"],
+      "@/constants": ["./lib/constants/index.ts"],
+      "@/actions": ["./lib/actions/index.ts"],
+      "@/validations": ["./lib/validations/index.ts"],
+      "@/utils": ["./lib/utils/index.ts"],
+      "@/icons": ["./lib/icons/index.ts"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "svgr.d.ts",
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
   "exclude": ["node_modules"]
 }
