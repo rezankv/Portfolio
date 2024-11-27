@@ -1,0 +1,13 @@
+{
+  "title": "users",
+  "type": "object",
+  "properties": {
+    "reza": {
+      "required": true,
+      "description": "rerwrewrew",
+      "fieldType": "String",
+      "dataType": "string",
+      "title": "reza"
+    }
+  }
+}
