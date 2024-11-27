@@ -1,6 +1,24 @@
 {
-  "commit": "9119cd2f6a2e039e153ce44cf4ed09e8c4afdd9e",
-  "generated": "2024-11-27T20:11:09.309Z",
+  "commit": "82aafcef2b5210cbb724fcfd0b79729346459c8a",
+  "generated": "2024-11-27T20:11:50.654Z",
   "metadata": [
+    {
+      "__outstatic": {
+        "commit": "82aafcef2b5210cbb724fcfd0b79729346459c8a",
+        "hash": "2846308067",
+        "path": "outstatic/content/posts/xxx.md"
+      },
+      "author": {
+        "name": "Reza Nikravesh",
+        "picture": "https://avatars.githubusercontent.com/u/36360043?v=4"
+      },
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-11-27T20:32:45.044Z",
+      "slug": "xxx",
+      "status": "draft",
+      "title": "XXX"
+    }
   ]
 }
