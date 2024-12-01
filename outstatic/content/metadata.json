@@ -1,6 +1,6 @@
 {
-  "commit": "3bbbd6ca87c21e9abea0546a09f883dfff038e4b",
-  "generated": "2024-12-01T11:11:46.868Z",
+  "commit": "49f1ed1ddb7a0a889f338966526ae4f051e428da",
+  "generated": "2024-12-01T11:14:12.812Z",
   "metadata": [
     {
       "__outstatic": {
@@ -19,24 +19,6 @@
       "slug": "xxx",
       "status": "draft",
       "title": "XXX"
-    },
-    {
-      "__outstatic": {
-        "commit": "9c0e76802897877e244bbac3f438a82c29bbf21c",
-        "hash": "3127280678",
-        "path": "outstatic/content/posts/bhtryn-rwsh-hy-drmn.md"
-      },
-      "author": {
-        "name": "Reza Nikravesh",
-        "picture": "https://avatars.githubusercontent.com/u/36360043?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "/images/d6052zf-232dcd0c-628f-49c6-b1c3-0ee23a927406-gwNj.jpg",
-      "description": "یشسیسشیسشیش",
-      "publishedAt": "2024-12-01T11:27:37.895Z",
-      "slug": "bhtryn-rwsh-hy-drmn",
-      "status": "published",
-      "title": "بهترین روش های درمان"
     },
     {
       "__outstatic": {
