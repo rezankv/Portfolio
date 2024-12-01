@@ -1,13 +1,5 @@
 {
   "title": "posts",
   "type": "object",
-  "properties": {
-    "boolean": {
-      "required": false,
-      "description": "",
-      "fieldType": "Boolean",
-      "dataType": "boolean",
-      "title": "boolean"
-    }
-  }
+  "properties": {}
 }
