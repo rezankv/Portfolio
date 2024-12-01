@@ -1,6 +1,6 @@
 {
-  "commit": "49f1ed1ddb7a0a889f338966526ae4f051e428da",
-  "generated": "2024-12-01T11:14:18.657Z",
+  "commit": "642acf9cdfc2be5d1914518f5191925b84a332d2",
+  "generated": "2024-12-01T13:40:01.685Z",
   "metadata": [
     {
       "__outstatic": {
@@ -59,6 +59,25 @@
       ],
       "text": "",
       "title": "dasdsad"
+    },
+    {
+      "__outstatic": {
+        "commit": "642acf9cdfc2be5d1914518f5191925b84a332d2",
+        "hash": "4085881903",
+        "path": "outstatic/content/posts/dasda.md"
+      },
+      "author": {
+        "name": "Reza Nikravesh",
+        "picture": "https://avatars.githubusercontent.com/u/36360043?v=4"
+      },
+      "category": "dd",
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-12-01T14:00:47.820Z",
+      "slug": "dasda",
+      "status": "published",
+      "title": "dasda"
     }
   ]
 }
