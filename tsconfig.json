@@ -24,7 +24,8 @@
       "@/actions": ["./lib/actions/index.ts"],
       "@/validations": ["./lib/validations/index.ts"],
       "@/utils": ["./lib/utils/index.ts"],
-      "@/icons": ["./lib/icons/index.ts"]
+      "@/icons": ["./lib/icons/index.ts"],
+      "@/models": ["./lib/models/index.ts"]
     }
   },
   "include": [

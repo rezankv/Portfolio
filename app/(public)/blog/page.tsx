@@ -1,3 +1,5 @@
+import { OstDocument } from "outstatic"
+import { getDocuments } from "outstatic/server"
 import Link from "next/link"
 import Image from "next/image"
 
@@ -7,24 +9,24 @@ import { generateUrl } from "@/utils"
 // constants
 import { SINGLE_BLOG_ROUTE } from "@/constants"
 
-const Page = () => {
-  const posts: any = [{}]
-
-  const renderPosts = (posts: []) => (
+const Page = async () => {
+  const posts = await getData()
+  console.log(posts)
+  const renderPosts = (posts: OstDocument[]) => (
     <section className="blog-posts">
       <ul className="blog-posts-list">
         {/* eslint-disable-next-line @typescript-eslint/no-unused-vars  */}
         {posts.map((post) => (
-          <li key={Math.random()} className="blog-post-item">
+          <li key={post.slug} className="blog-post-item">
             <Link
-              href={generateUrl(SINGLE_BLOG_ROUTE, { slug: "post.slug" }, {})}
+              href={generateUrl(SINGLE_BLOG_ROUTE, { slug: post.slug }, {})}
             >
               <figure className="blog-banner-box">
                 <Image
                   width={100}
                   height={100}
-                  src={"/images/b.jpg"}
-                  alt={"post.title"}
+                  src={post.coverImage || ""}
+                  alt={post.title}
                   loading="lazy"
                 />
               </figure>
@@ -32,14 +34,14 @@ const Page = () => {
               <div className="blog-content">
                 <div className="blog-meta">
                   <span className="dot"></span>
-                  <p className="blog-category">{"post.category"}</p>
+                  <p className="blog-category">{String(post.category) || ""}</p>
 
-                  {/* <time datetime="2022-02-23">۵ آذر</time> */}
+                  <time datetime="2022-02-23">۵ آذر</time>
                 </div>
 
-                <h3 className="h3 blog-item-title">{"post.title"}</h3>
+                <h3 className="h3 blog-item-title">{post.title}</h3>
 
-                <p className="blog-text">{"post.description"}</p>
+                <p className="blog-text">{post.description}</p>
               </div>
             </Link>
           </li>
@@ -58,6 +60,17 @@ const Page = () => {
       </article>
     </>
   )
+}
+
+async function getData() {
+  const posts = getDocuments("posts", [
+    "title",
+    "description",
+    "category",
+    "coverImage",
+    "slug",
+  ])
+  return posts
 }
 
 export default Page
