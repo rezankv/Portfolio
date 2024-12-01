@@ -16,31 +16,6 @@
       "dataType": "number",
       "title": "number"
     },
-    "tags": {
-      "required": false,
-      "description": "",
-      "fieldType": "Tags",
-      "dataType": "array",
-      "title": "tags",
-      "values": [
-        {
-          "value": "fbadjkhbdka",
-          "label": "fbadjkhbdka"
-        },
-        {
-          "value": "dsa",
-          "label": "dsa"
-        },
-        {
-          "value": "dsadadas",
-          "label": "dsadadas"
-        },
-        {
-          "value": "asdasdsa",
-          "label": "asdasdsa"
-        }
-      ]
-    },
     "boolean": {
       "required": false,
       "description": "",
