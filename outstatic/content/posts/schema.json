@@ -15,6 +15,13 @@
       "fieldType": "Text",
       "dataType": "string",
       "title": "text"
+    },
+    "number": {
+      "required": false,
+      "description": "",
+      "fieldType": "Number",
+      "dataType": "number",
+      "title": "number"
     }
   }
 }
