@@ -1,6 +1,6 @@
 {
   "commit": "ce7e547e9ac70cb1357605545362a952369f04bd",
-  "generated": "2024-12-01T13:50:13.256Z",
+  "generated": "2024-12-01T13:50:24.200Z",
   "metadata": [
     {
       "__outstatic": {
@@ -81,9 +81,9 @@
     },
     {
       "__outstatic": {
-        "commit": "ce7e547e9ac70cb1357605545362a952369f04bd",
-        "hash": "2922260789",
-        "path": "outstatic/content/posts/wqeqewqwqqew.md"
+        "commit": "07dfe75bacd6edf929768ccb4c1da4d496c303c1",
+        "hash": "428476594",
+        "path": "outstatic/content/posts/dsadsa.md"
       },
       "author": {
         "name": "Reza Nikravesh",
@@ -94,9 +94,28 @@
       "coverImage": "",
       "description": "",
       "publishedAt": "2024-12-01T14:10:52.310Z",
-      "slug": "wqeqewqwqqew",
+      "slug": "dsadsa",
       "status": "published",
-      "title": "wqeqewqwqqew"
+      "title": "dsadsa"
+    },
+    {
+      "__outstatic": {
+        "commit": "ce7e547e9ac70cb1357605545362a952369f04bd",
+        "hash": "4080614707",
+        "path": "outstatic/content/posts/wqeqeeqweqwewq12311w1wqwqqew.md"
+      },
+      "author": {
+        "name": "Reza Nikravesh",
+        "picture": "https://avatars.githubusercontent.com/u/36360043?v=4"
+      },
+      "category": "dasdad",
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-12-01T14:10:52.310Z",
+      "slug": "wqeqeeqweqwewq12311w1wqwqqew",
+      "status": "published",
+      "title": "wqeqeeqweqwewq12311w1wqwqqew"
     }
   ]
 }
