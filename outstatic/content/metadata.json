@@ -1,6 +1,6 @@
 {
-  "commit": "ce7e547e9ac70cb1357605545362a952369f04bd",
-  "generated": "2024-12-01T13:51:14.259Z",
+  "commit": "b95ead6b895492afafa204e6d53690a48b0a64f3",
+  "generated": "2024-12-01T13:52:47.349Z",
   "metadata": [
     {
       "__outstatic": {
@@ -116,6 +116,25 @@
       "slug": "wqeqeeqweqwewq12311w1wqwqqew13123131",
       "status": "published",
       "title": "wqeqeeqweqwewq12311w1wqwqqew13123131"
+    },
+    {
+      "__outstatic": {
+        "commit": "b95ead6b895492afafa204e6d53690a48b0a64f3",
+        "hash": "3660274430",
+        "path": "outstatic/content/posts/cxczz.md"
+      },
+      "author": {
+        "name": "Reza Nikravesh",
+        "picture": "https://avatars.githubusercontent.com/u/36360043?v=4"
+      },
+      "category": "asdadsa",
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "publishedAt": "2024-12-01T14:13:38.041Z",
+      "slug": "cxczz",
+      "status": "published",
+      "title": "cxczz"
     }
   ]
 }
