@@ -1,6 +1,6 @@
 {
-  "commit": "642acf9cdfc2be5d1914518f5191925b84a332d2",
-  "generated": "2024-12-01T13:40:01.685Z",
+  "commit": "ca24293bc91037b33307f0fa5887533842b8ef2c",
+  "generated": "2024-12-01T13:42:34.074Z",
   "metadata": [
     {
       "__outstatic": {
@@ -62,22 +62,22 @@
     },
     {
       "__outstatic": {
-        "commit": "642acf9cdfc2be5d1914518f5191925b84a332d2",
-        "hash": "4085881903",
+        "commit": "ca24293bc91037b33307f0fa5887533842b8ef2c",
+        "hash": "813199813",
         "path": "outstatic/content/posts/dasda.md"
       },
       "author": {
         "name": "Reza Nikravesh",
         "picture": "https://avatars.githubusercontent.com/u/36360043?v=4"
       },
-      "category": "dd",
+      "category": "reza",
       "collection": "posts",
       "coverImage": "",
-      "description": "",
+      "description": "توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد توضیحات زیاد ",
       "publishedAt": "2024-12-01T14:00:47.820Z",
       "slug": "dasda",
       "status": "published",
-      "title": "dasda"
+      "title": "تیتر زیبای من"
     }
   ]
 }
