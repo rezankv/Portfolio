@@ -30,6 +30,13 @@
       "dataType": "array",
       "title": "tags",
       "values": []
+    },
+    "boolean": {
+      "required": false,
+      "description": "",
+      "fieldType": "Boolean",
+      "dataType": "boolean",
+      "title": "boolean"
     }
   }
 }
