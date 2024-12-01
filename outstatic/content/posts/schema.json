@@ -2,13 +2,6 @@
   "title": "posts",
   "type": "object",
   "properties": {
-    "text": {
-      "required": false,
-      "description": "",
-      "fieldType": "Text",
-      "dataType": "string",
-      "title": "text"
-    },
     "number": {
       "required": false,
       "description": "",
