@@ -1,25 +1,7 @@
 {
   "commit": "49f1ed1ddb7a0a889f338966526ae4f051e428da",
-  "generated": "2024-12-01T11:14:15.703Z",
+  "generated": "2024-12-01T11:14:18.657Z",
   "metadata": [
-    {
-      "__outstatic": {
-        "commit": "82aafcef2b5210cbb724fcfd0b79729346459c8a",
-        "hash": "2846308067",
-        "path": "outstatic/content/posts/xxx.md"
-      },
-      "author": {
-        "name": "Reza Nikravesh",
-        "picture": "https://avatars.githubusercontent.com/u/36360043?v=4"
-      },
-      "collection": "posts",
-      "coverImage": "",
-      "description": "",
-      "publishedAt": "2024-11-27T20:32:45.044Z",
-      "slug": "xxx",
-      "status": "draft",
-      "title": "XXX"
-    },
     {
       "__outstatic": {
         "commit": "9c0e76802897877e244bbac3f438a82c29bbf21c",
@@ -37,6 +19,46 @@
       "slug": "bhtryn-rwsh-hy-drmn",
       "status": "published",
       "title": "بهترین روش های درمان"
+    },
+    {
+      "__outstatic": {
+        "commit": "3bbbd6ca87c21e9abea0546a09f883dfff038e4b",
+        "hash": "2449754884",
+        "path": "outstatic/content/posts/dasdsad.md"
+      },
+      "author": {
+        "name": "Reza Nikravesh",
+        "picture": "https://avatars.githubusercontent.com/u/36360043?v=4"
+      },
+      "boolean": "",
+      "collection": "posts",
+      "coverImage": "",
+      "description": "",
+      "number": "",
+      "publishedAt": "2024-12-01T11:32:02.669Z",
+      "slug": "dasdsad",
+      "status": "published",
+      "string": "",
+      "tags": [
+        {
+          "label": "fbadjkhbdka",
+          "value": "fbadjkhbdka"
+        },
+        {
+          "label": "dsa",
+          "value": "dsa"
+        },
+        {
+          "label": "dsadadas",
+          "value": "dsadadas"
+        },
+        {
+          "label": "asdasdsa",
+          "value": "asdasdsa"
+        }
+      ],
+      "text": "",
+      "title": "dasdsad"
     }
   ]
 }
