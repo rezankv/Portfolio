@@ -1448,6 +1448,7 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     width: 120px;
+    height: 120px;
   }
 
   .info-content .name {
@@ -1989,6 +1990,7 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     width: 150px;
+    height: 150px;
   }
 
   .info-content .name {
